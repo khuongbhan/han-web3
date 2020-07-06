@@ -1,3 +1,48 @@
 /* =============
     Header
 ============= */
+header {
+	div {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		@include md {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		#logo-container {
+			border: 1px $h1-brown solid;
+			padding: 10px 0;
+			img {
+				width: 52px;
+				@include md {
+					width: 75px;
+				}
+				@include lg {
+					width: 100px;
+				}
+			}
+		}
+		#title-container {
+			// font-size: rem-calc(30);
+			border: 1px $h1-brown solid;
+			color: $h1-brown;
+			display: none;
+			@include md {
+				align-items: center;
+				display: flex;
+				font-size: rem-calc(26);
+				justify-content: center;
+			}
+			@include lg {
+				font-size: rem-calc(30);
+			}
+		}
+		#burger-container {
+			align-items: center;
+			border: 1px $h1-brown solid;
+			color: $h1-brown;
+			display: flex;
+			font-size: rem-calc(30);
+			justify-content: flex-end;
+		}
+	}
+}

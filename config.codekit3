@@ -19,6 +19,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/cursor.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/cursor.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/header/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -37,6 +57,22 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/content/index-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
+		"oF": 0
 		},
 	"/dev/global/head.kit": {
 		"cB": 0,
@@ -211,7 +247,7 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section-1.scss": {
+	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -219,7 +255,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-1.css",
+		"oAP": "/dev/scss/sections/_index-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -236,14 +272,6 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
-		},
-	"/dev/section-1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/section-1.html",
-		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

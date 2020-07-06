@@ -4,20 +4,30 @@
 // font-family: 'Roboto Mono', monospace;
 // font-family: 'Yeseva One', serif;
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Yeseva One', serif;
 }
 
-h1,h2,h3,h4{
+footer {
+    // p {
+    //     font-family: 'Roboto Mono', monospace;
+    // }
+}
+
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
     padding: 0;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-.section-title{
+.section-title {
     font-weight: 300;
 }

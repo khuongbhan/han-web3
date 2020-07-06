@@ -1,16 +1,44 @@
 /* =============
     Base
 ============= */
-figure{
+figure {
     padding: 0;
     margin: 0;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
+a:link,
+a:visited {
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 5px auto 5px;
+    grid-template-areas: ". container .";
+
+    @include lg {
+        grid-template-columns: 10px auto 10px;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+        grid-area: container;
+    }
+}
+
+.content-spacing {
+    padding: 60px 0 50px;
+}

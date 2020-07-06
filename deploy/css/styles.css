@@ -365,14 +365,47 @@ ul li {
   list-style: none;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 5px auto 5px;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 10px auto 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.grid-container > div {
+  grid-area: container;
+}
+
+.content-spacing {
+  padding: 60px 0 50px;
+}
+
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Yeseva One", serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -389,6 +422,15 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  outline: none;
+  transition: 0.25s;
+}
+
+*:focus {
+  outline: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -413,9 +455,166 @@ textarea {
 /* =============
     Header
 ============= */
+header div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  header div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+header div #logo-container {
+  border: 1px #AB633D solid;
+  padding: 10px 0;
+}
+header div #logo-container img {
+  width: 52px;
+}
+@media (min-width: 768px) {
+  header div #logo-container img {
+    width: 75px;
+  }
+}
+@media (min-width: 992px) {
+  header div #logo-container img {
+    width: 100px;
+  }
+}
+header div #title-container {
+  border: 1px #AB633D solid;
+  color: #AB633D;
+  display: none;
+}
+@media (min-width: 768px) {
+  header div #title-container {
+    align-items: center;
+    display: flex;
+    font-size: 1.625rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  header div #title-container {
+    font-size: 1.875rem;
+  }
+}
+header div #burger-container {
+  align-items: center;
+  border: 1px #AB633D solid;
+  color: #AB633D;
+  display: flex;
+  font-size: 1.875rem;
+  justify-content: flex-end;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #EBF0E7;
+}
+footer > div {
+  text-align: center;
+}
+footer > div h1 {
+  color: #4F2E1C;
+  font-size: 1.375rem;
+  padding: 60px 0 20px 0;
+}
+@media (min-width: 768px) {
+  footer > div h1 {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 992px) {
+  footer > div h1 {
+    font-size: 2.5rem;
+  }
+}
+footer > div form section {
+  display: flex;
+  justify-content: center;
+}
+footer > div form section div {
+  margin-right: 10px;
+}
+footer > div form section div input {
+  background-color: #EBF0E7;
+  border: none;
+  border-bottom: 1px #4F2E1C solid;
+  border-radius: 0;
+  color: #4F2E1C;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 0 2px 10px;
+}
+@media (min-width: 768px) {
+  footer > div form section div input {
+    padding: 15px 0 2px 15px;
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  footer > div form section div input {
+    padding: 18px 0 2px 18px;
+    width: 400px;
+  }
+}
+footer > div form section div input ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7D736D;
+  opacity: 1;
+}
+footer > div form section div input :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #7D736D;
+}
+footer > div form section div input ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #7D736D;
+}
+footer > div form section div button {
+  background-color: #EBF0E7;
+  border: 1px #C88968 solid;
+  border-radius: 26px;
+  color: #C88968;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  footer > div form section div button {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 1200px) {
+  footer > div form section div button {
+    padding: 0 25px;
+  }
+}
+footer > div form section div button:hover {
+  background-color: #C88968;
+  color: #fff;
+}
+footer > div ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 50px;
+}
+footer > div ul li {
+  margin: 0 15px;
+}
+footer > div ul li a:link,
+footer > div ul li a:visited {
+  color: #4F2E1C;
+  font-size: 1.25rem;
+}
+footer > div ul li a:link:hover, footer > div ul li a:link:active,
+footer > div ul li a:visited:hover,
+footer > div ul li a:visited:active {
+  color: #C88968;
+}
+
 /* =============
-    Section 1
+    Index Content
 ============= */
