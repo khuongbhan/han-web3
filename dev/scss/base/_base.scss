@@ -40,5 +40,9 @@ a:visited {
 }
 
 .content-spacing {
-    padding: 60px 0 50px;
+    padding: 20px 0;
+
+    @include lg {
+        padding: 60px 0 50px;
+    }
 }

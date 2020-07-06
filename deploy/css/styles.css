@@ -391,7 +391,12 @@ a:visited {
 }
 
 .content-spacing {
-  padding: 60px 0 50px;
+  padding: 20px 0;
+}
+@media (min-width: 992px) {
+  .content-spacing {
+    padding: 60px 0 50px;
+  }
 }
 
 /* =============
@@ -465,7 +470,6 @@ header div {
   }
 }
 header div #logo-container {
-  border: 1px #AB633D solid;
   padding: 10px 0;
 }
 header div #logo-container img {
@@ -482,7 +486,6 @@ header div #logo-container img {
   }
 }
 header div #title-container {
-  border: 1px #AB633D solid;
   color: #AB633D;
   display: none;
 }
@@ -501,11 +504,42 @@ header div #title-container {
 }
 header div #burger-container {
   align-items: center;
-  border: 1px #AB633D solid;
   color: #AB633D;
   display: flex;
   font-size: 1.875rem;
   justify-content: flex-end;
+}
+header div #burger-container .container {
+  display: inline-block;
+  cursor: pointer;
+}
+header div #burger-container .bar1,
+header div #burger-container .bar3 {
+  border-radius: 10px;
+  width: 45px;
+  height: 3px;
+  background-color: #AB633D;
+  margin: 10px 0;
+  transition: 0.4s;
+}
+header div #burger-container .bar2 {
+  border-radius: 10px;
+  width: 30px;
+  height: 3px;
+  background-color: #AB633D;
+  margin: 10px 0 10px 15px;
+  transition: 0.4s;
+}
+header div #burger-container .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-13px, 10px);
+  transform: rotate(-45deg) translate(-8px, 10px);
+}
+header div #burger-container .change .bar2 {
+  opacity: 0;
+}
+header div #burger-container .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-12px, -10px);
+  transform: rotate(45deg) translate(-8px, -11px);
 }
 
 /* =============
@@ -581,6 +615,7 @@ footer > div form section div button {
   cursor: pointer;
   font-family: "Roboto Mono", monospace;
   height: 100%;
+  padding: 0 10px;
 }
 @media (min-width: 992px) {
   footer > div form section div button {
@@ -618,3 +653,112 @@ footer > div ul li a:visited:active {
 /* =============
     Index Content
 ============= */
+#index-encounters #title {
+  color: #AB633D;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#index-encounters #slash img {
+  width: 65px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#index-encounters #quote {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+}
+#index-encounters #quote #mark {
+  display: list-item;
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+  margin-top: 30px;
+}
+#index-encounters #quote #mark img {
+  height: 73px;
+}
+#index-encounters #quote #text {
+  color: #51787A;
+  grid-column: 2/span 5;
+  grid-row: 2/span 3;
+  margin-left: -10px;
+  z-index: 50;
+}
+#index-encounters #quote #box {
+  background-color: #F7E1D8;
+  grid-column: 4/span 3;
+  grid-row: 2/span 3;
+  margin-right: -5px;
+}
+#index-encounters #scroll {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+#index-encounters #scroll p,
+#index-encounters #scroll a {
+  margin: 0 10px;
+}
+#index-encounters #scroll p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: #DBA68A;
+  align-self: center;
+}
+#index-encounters #card1 {
+  display: grid;
+  grid-template-columns: repeat(10, 27px);
+  grid-template-rows: repeat(9, 25px);
+}
+#index-encounters #card1 #card1-info {
+  grid-column: 1/span 5;
+  grid-row: 1/span 2;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(2, 77px);
+  column-gap: 5px;
+  grid-template-areas: "icon name";
+}
+#index-encounters #card1 #card1-info #card1-icon {
+  grid-area: icon;
+}
+#index-encounters #card1 #card1-info #card1-icon img {
+  width: 75px;
+}
+#index-encounters #card1 #card1-info #card1-name {
+  grid-area: name;
+  display: grid;
+  grid-template-rows: repeat(2, 23px);
+  grid-template-areas: "asteroid" "number";
+}
+#index-encounters #card1 #card1-info #card1-name h4 {
+  grid-area: asteroid;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: #AB633D;
+}
+#index-encounters #card1 #card1-info #card1-name h1 {
+  grid-area: number;
+  font-family: "Yeseva One", serif;
+  font-size: 2.25rem;
+  color: #AB633D;
+}
+#index-encounters #card1 #card1-content {
+  grid-column: 2/span 9;
+  grid-row: 1/span 7;
+  background-color: #F7E1D8;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(11, 23px);
+  grid-template-rows: repeat(7, 26px);
+}
+#index-encounters #card1 #card1-content #card1-image {
+  grid-column: 0.5/span 5;
+  grid-row: 2/span 5;
+}
+#index-encounters #card1 #card1-content #card1-image img {
+  width: 120px;
+}

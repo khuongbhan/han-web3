@@ -9,7 +9,7 @@ header {
 			grid-template-columns: repeat(3, 1fr);
 		}
 		#logo-container {
-			border: 1px $h1-brown solid;
+			// border: 1px $h1-brown solid;
 			padding: 10px 0;
 			img {
 				width: 52px;
@@ -23,7 +23,7 @@ header {
 		}
 		#title-container {
 			// font-size: rem-calc(30);
-			border: 1px $h1-brown solid;
+			// border: 1px $h1-brown solid;
 			color: $h1-brown;
 			display: none;
 			@include md {
@@ -38,11 +38,51 @@ header {
 		}
 		#burger-container {
 			align-items: center;
-			border: 1px $h1-brown solid;
+			// border: 1px $h1-brown solid;
 			color: $h1-brown;
 			display: flex;
 			font-size: rem-calc(30);
-			justify-content: flex-end;
+            justify-content: flex-end;
+            
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                // display: flex;
+                // align-items: center;
+                // justify-content: flex-end;
+            }
+
+            .bar1,
+            .bar3 {
+                border-radius: 10px;
+                width: 45px;
+                height: 3px;
+                background-color: $h1-brown;
+                margin: 10px 0;
+                transition: 0.4s;
+            }
+            .bar2 {
+                border-radius: 10px;
+                width: 30px;
+                height: 3px;
+                background-color: $h1-brown;
+                margin: 10px 0 10px 15px;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-13px, 10px);
+                transform: rotate(-45deg) translate(-8px, 10px);
+            }
+
+            .change .bar2 {
+                opacity: 0;
+            }
+
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-12px, -10px);
+                transform: rotate(45deg) translate(-8px, -11px);
+            }
 		}
 	}
 }
