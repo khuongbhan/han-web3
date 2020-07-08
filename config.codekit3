@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/hindsight.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/hindsight.html",
+		"oF": 0
+		},
 	"/deploy/img/cursor.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -110,6 +118,92 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/hindsight/gallery-1.jpg": {
+		"ft": 16384,
+		"iS": 231424,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/gallery-2.jpg": {
+		"ft": 16384,
+		"iS": 36828,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 195371,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 283553,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/gallery-5.jpg": {
+		"ft": 16384,
+		"iS": 38646,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 159039,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/hindsight/gallery-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/hindsight/planet.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/hindsight/planet.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/hindsight/quote-mark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/hindsight/quote-mark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -128,6 +222,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/dev/content/hindsight-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/hindsight-content.html",
+		"oF": 0
 		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
@@ -168,6 +270,14 @@
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
 		"oF": 0
+		},
+	"/dev/hindsight.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/hindsight.html",
+		"oF": 2
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -314,6 +424,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_hindsight-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_hindsight-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
