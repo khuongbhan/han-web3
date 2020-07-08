@@ -39,5 +39,10 @@ $burger.on( "click", myFunction);
 // // close the mobile menu when menu link is clicked
 // $navA.on( "click", mouseClick);
 
+// @codekit-prepend "fancybox.js";
 
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
 
