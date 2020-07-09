@@ -1,0 +1,92 @@
+/* =============
+    Friends Content
+============= */
+#friends-container {
+    @include md {
+        display: grid;
+        grid-template-columns: 10% auto;
+        grid-template-areas: ". container";
+    }
+
+    #banner-container {
+        @include md {
+            grid-area: container;
+        }
+
+        #section-title {
+            color: $h1-brown;
+            font-size: rem-calc(25);
+            text-align: center;
+            padding-bottom: 20px;
+
+            @include md {
+                font-size: rem-calc(30);
+                text-align: left;
+                padding-bottom: 5px;
+            }
+
+            @include lg {
+                font-size: rem-calc(50);
+            }
+        }
+
+        #slash {
+            img {
+                width: 65px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-bottom: 20px;
+
+                @include md {
+                    width: 80px;
+                    margin-left: 150px;
+                }
+
+                @include lg {
+                    width: 135px;
+                    margin-left: 230px;
+                }
+            }
+        }
+
+        #quote {
+            #text {
+                color: $quote-teal;
+                text-align: center;
+
+                @include md {
+                    margin-left: -250px;
+                }
+
+                @include lg {
+                    margin-left: -120px;
+                }
+
+                h2 {
+                    @include md {
+                        font-size: rem-calc(25);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                    }
+                }
+            }
+
+            // #box {
+            //     background-color: $card-pink;
+            //     grid-column: 1 / span 6;
+            //     grid-row: 1 / span 3;
+            //     margin-left: -300px;
+            //     overflow: hidden;
+
+            //     @include md {
+            //         grid-column: 1 / span 6;
+            //         grid-row: 1 / span 3;
+            //     }
+
+            // }
+        }
+    }
+}

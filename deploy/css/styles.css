@@ -1036,7 +1036,8 @@ footer > div ul li a:visited:active {
   background-color: #F7E1D8;
   grid-column: 1/span 3;
   grid-row: 2/span 2;
-  margin-left: -100px;
+  margin-left: -300px;
+  overflow: hidden;
   z-index: -10;
 }
 @media (min-width: 768px) {
@@ -1291,3 +1292,84 @@ footer > div ul li a:visited:active {
     height: 200px;
   }
 }
+
+/* =============
+    Friends Content
+============= */
+@media (min-width: 768px) {
+  #friends-container {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-areas: ". container";
+  }
+}
+@media (min-width: 768px) {
+  #friends-container #banner-container {
+    grid-area: container;
+  }
+}
+#friends-container #banner-container #section-title {
+  color: #AB633D;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #friends-container #banner-container #section-title {
+    font-size: 1.875rem;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 992px) {
+  #friends-container #banner-container #section-title {
+    font-size: 3.125rem;
+  }
+}
+#friends-container #banner-container #slash img {
+  width: 65px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #friends-container #banner-container #slash img {
+    width: 80px;
+    margin-left: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #friends-container #banner-container #slash img {
+    width: 135px;
+    margin-left: 230px;
+  }
+}
+#friends-container #banner-container #quote #text {
+  color: #51787A;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #friends-container #banner-container #quote #text {
+    margin-left: -250px;
+  }
+}
+@media (min-width: 992px) {
+  #friends-container #banner-container #quote #text {
+    margin-left: -120px;
+  }
+}
+@media (min-width: 768px) {
+  #friends-container #banner-container #quote #text h2 {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 992px) {
+  #friends-container #banner-container #quote #text h2 {
+    font-size: 3.125rem;
+  }
+}
+
+/* =============
+    Wonders Content
+============= */

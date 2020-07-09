@@ -19,6 +19,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/friends.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/friends.html",
+		"oF": 0
+		},
 	"/deploy/hindsight.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -223,6 +231,22 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/deploy/wonders.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/wonders.html",
+		"oF": 0
+		},
+	"/dev/content/friends-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/friends-content.html",
+		"oF": 0
+		},
 	"/dev/content/hindsight-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -238,6 +262,22 @@
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
 		"oF": 0
+		},
+	"/dev/content/wonders-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/wonders-content.html",
+		"oF": 0
+		},
+	"/dev/friends.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/friends.html",
+		"oF": 2
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -452,6 +492,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_friends-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_friends-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_hindsight-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -478,6 +531,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_wonders-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_wonders-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -490,6 +556,14 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
+		},
+	"/dev/wonders.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/wonders.html",
+		"oF": 2
 		},
 	"/README.md": {
 		"cB": 0,
