@@ -563,7 +563,7 @@
                         top: -60px;
                         left: -40px;
                     }
-                
+
 
                     @include xl {
                         top: -60px;
@@ -588,7 +588,7 @@
                         top: -60px;
                         left: -40px;
                     }
-                
+
                     @include xl {
                         top: -60px;
                         left: -40px;
@@ -657,7 +657,7 @@
             padding-bottom: 60px;
             // border: 1px solid red;
             // background-position: -100px 500px;
-            background-position: 60px -30px; 
+            background-position: 60px -30px;
 
             @include md {
                 height: 150px;
@@ -718,7 +718,7 @@
                 display: grid;
                 grid-template-rows: 10% auto;
                 grid-template-areas: "text"
-                                    "image";
+                    "image";
 
                 @include lg {
                     border-radius: 33px;
@@ -811,7 +811,7 @@
 
                 aside {
                     grid-area: image;
-                    
+
                     #narrator-img {
                         object-fit: cover;
                         height: 100%;
@@ -862,6 +862,101 @@
             @include md {
                 height: 150px;
                 background-position: 90px -50px;
+            }
+        }
+    }
+}
+
+#index-ending-quote {
+    padding-bottom: 60px;
+
+    #index-ending-container {
+        #slash {
+            margin-top: -40px;
+            padding-bottom: 30px;
+
+            @include md {
+                margin-top: 0px;
+            }
+
+            img {
+                width: 65px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+
+                @include md {
+                    display: none;
+                }
+            }
+        }
+
+        #index-end-quote {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            @include md {
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                column-gap: 10px;
+            }
+
+            @include lg {
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                column-gap: 10px;
+            }
+
+            #index-end-text {
+                grid-column: 1 / span 4;
+                grid-row: 1 / span 3;
+
+                @include md {
+                    grid-column: 3 / span 7;
+                    grid-row: 1 / span 4;
+                }
+
+                h2 {
+                    color: $quote-teal;
+                    font-size: rem-calc(25);
+                    text-align: left;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(50);
+                    }
+                }
+            }
+
+            #index-end-mark {
+                grid-column: 4 / span 1;
+                grid-row: 2 / span 2;
+
+                @include md {
+                    grid-column: 8 / span 2;
+                    grid-row: 4 / span 2;
+                }
+
+                @include md {
+                    grid-column: 8 / span 2;
+                    grid-row: 3 / span 2;
+                }
+
+                img {
+                    height: 80px;
+
+                    @include md {
+                        height: 100px;
+                    }
+
+                    @include lg {
+                        height: 200px;
+                    }
+                }
             }
         }
     }
