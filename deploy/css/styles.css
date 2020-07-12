@@ -828,16 +828,22 @@ footer > div ul li a:visited:active {
   display: grid;
   grid-template-columns: 10% auto 10%;
   grid-template-areas: ". card-grid .";
+  padding-bottom: 60px;
 }
 @media (min-width: 992px) {
   .card-grid {
     grid-template-columns: 15% auto 10%;
   }
 }
+@media (min-width: 1200px) {
+  .card-grid {
+    grid-template-columns: auto 1024px auto;
+  }
+}
 .card-grid > div {
   grid-area: card-grid;
 }
-.card-grid > div .cards > div {
+.card-grid > div .cards-left > div {
   background-color: #F7E1D8;
   border-radius: 16px;
   padding: 25px 20px;
@@ -846,74 +852,158 @@ footer > div ul li a:visited:active {
   grid-template-columns: 45% auto;
 }
 @media (min-width: 992px) {
-  .card-grid > div .cards > div {
+  .card-grid > div .cards-left > div {
     border-radius: 33px;
     padding: 70px 50px;
   }
 }
-.card-grid > div .cards > div .card-icon {
+.card-grid > div .cards-left > div .card-icon {
   position: absolute;
 }
-.card-grid > div .cards > div #card-info {
+.card-grid > div .cards-left > div #card-info {
   top: -30px;
   left: -20px;
-  display: flex;
-  justify-content: center;
 }
 @media (min-width: 768px) {
-  .card-grid > div .cards > div #card-info {
+  .card-grid > div .cards-left > div #card-info {
     top: -50px;
     left: -40px;
   }
 }
-.card-grid > div .cards > div #card-info #planet {
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #card-info {
+    top: -80px;
+    left: -80px;
+  }
+}
+.card-grid > div .cards-left > div #card-info #planet {
   width: 75px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .card-grid > div .cards > div #card-info #planet {
+  .card-grid > div .cards-left > div #card-info #planet {
     width: 120px;
   }
 }
-.card-grid > div .cards > div #card-info #asteroid-number {
-  font-size: 2.25rem;
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #card-info #planet {
+    width: 240px;
+  }
+}
+.card-grid > div .cards-left > div #card-info #asteroid-number {
+  font-size: 1.875rem;
   color: #AB633D;
-  text-align: center;
-  margin-left: 10px;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: -55px;
 }
 @media (min-width: 768px) {
-  .card-grid > div .cards > div #card-info #asteroid-number {
+  .card-grid > div .cards-left > div #card-info #asteroid-number {
     padding-top: 10px;
-    margin-left: 20px;
+    margin-left: 140px;
+    margin-top: -95px;
     font-size: 2.8125rem;
   }
 }
-.card-grid > div .cards > div #crown {
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #card-info #asteroid-number {
+    font-size: 3.75rem;
+    padding-top: 22px;
+    margin-left: 260px;
+    margin-top: -180px;
+  }
+}
+.card-grid > div .cards-left > div #crown {
   width: 65px;
   top: 170px;
   left: 260px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .card-grid > div .cards > div #crown {
+  .card-grid > div .cards-left > div #crown {
     width: 120px;
     top: 310px;
     left: 520px;
   }
 }
-.card-grid > div .cards > div aside #king-img {
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #crown {
+    width: 200px;
+    top: 420px;
+    left: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-left > div #crown {
+    top: 570px;
+    left: 880px;
+  }
+}
+.card-grid > div .cards-left > div #bottle {
+  width: 65px;
+  top: 170px;
+  left: 260px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-left > div #bottle {
+    width: 120px;
+    top: 310px;
+    left: 520px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #bottle {
+    width: 200px;
+    top: 420px;
+    left: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-left > div #bottle {
+    top: 570px;
+    left: 880px;
+  }
+}
+.card-grid > div .cards-left > div #lamp {
+  width: 65px;
+  top: 170px;
+  left: 260px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-left > div #lamp {
+    width: 120px;
+    top: 310px;
+    left: 520px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div #lamp {
+    width: 200px;
+    top: 420px;
+    left: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-left > div #lamp {
+    top: 570px;
+    left: 880px;
+  }
+}
+.card-grid > div .cards-left > div aside #king-img {
   width: 100%;
 }
-.card-grid > div .cards > div aside #flip-arrow {
+.card-grid > div .cards-left > div aside #flip-arrow {
   width: 30px;
 }
 @media (min-width: 992px) {
-  .card-grid > div .cards > div aside #flip-arrow {
+  .card-grid > div .cards-left > div aside #flip-arrow {
     width: 80px;
     margin-top: 30px;
   }
 }
-.card-grid > div .cards > div aside #flip-to-read {
+.card-grid > div .cards-left > div aside #flip-to-read {
   color: #DBA68A;
   font-size: 0.5rem;
   font-family: "Roboto Mono", monospace;
@@ -921,22 +1011,37 @@ footer > div ul li a:visited:active {
   margin-top: -10px;
 }
 @media (min-width: 992px) {
-  .card-grid > div .cards > div aside #flip-to-read {
+  .card-grid > div .cards-left > div aside #flip-to-read {
     font-size: 1rem;
     margin-left: 90px;
     margin-top: -20px;
   }
 }
-.card-grid > div .cards > div section h5 {
+.card-grid > div .cards-left > div aside #tippler-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card-grid > div .cards-left > div aside #lamplighter-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card-grid > div .cards-left > div section h5 {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
   color: #AB633D;
   margin-left: -10px;
 }
 @media (min-width: 768px) {
-  .card-grid > div .cards > div section h5 {
+  .card-grid > div .cards-left > div section h5 {
     font-size: 1.5625rem;
     margin-left: -20px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-left > div section h5 {
+    font-size: 2rem;
   }
 }
 .card-grid > div #flight-line-1 {
@@ -946,9 +1051,280 @@ footer > div ul li a:visited:active {
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: 50px;
+  padding-bottom: 70px;
 }
 @media (min-width: 768px) {
   .card-grid > div #flight-line-1 {
+    height: 150px;
+    background-position: 140px;
+  }
+}
+.card-grid > div #flight-line-3 {
+  height: 80px;
+  width: 100%;
+  background-image: url("../img/encounters/card3-4-line.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 20px 0px;
+  padding-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .card-grid > div #flight-line-3 {
+    height: 150px;
+    background-position: 140px;
+  }
+}
+.card-grid > div #flight-line-5 {
+  height: 80px;
+  width: 100%;
+  background-image: url("../img/encounters/card5-6-line.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 30px -200px;
+  padding-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .card-grid > div #flight-line-5 {
+    height: 150px;
+    background-position: 140px;
+  }
+}
+.card-grid > div .cards-right > div {
+  background-color: #F7E1D8;
+  border-radius: 16px;
+  padding: 25px 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 45%;
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div {
+    border-radius: 33px;
+    padding: 70px 50px;
+  }
+}
+.card-grid > div .cards-right > div .card-icon {
+  position: absolute;
+}
+.card-grid > div .cards-right > div #card-info {
+  top: 195px;
+  left: 70px;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #card-info {
+    top: 370px;
+    left: 290px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #card-info {
+    top: 480px;
+    left: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-right > div #card-info {
+    top: 650px;
+    left: 540px;
+  }
+}
+.card-grid > div .cards-right > div #card-info #planet {
+  width: 75px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #card-info #planet {
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #card-info #planet {
+    width: 240px;
+  }
+}
+.card-grid > div .cards-right > div #card-info #asteroid-number {
+  font-size: 1.875rem;
+  color: #AB633D;
+  text-align: left;
+  margin-left: 85px;
+  margin-top: -65px;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #card-info #asteroid-number {
+    padding-top: 10px;
+    margin-left: 140px;
+    margin-top: -95px;
+    font-size: 2.8125rem;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #card-info #asteroid-number {
+    font-size: 3.75rem;
+    padding-top: 22px;
+    margin-left: 255px;
+    margin-top: -180px;
+  }
+}
+.card-grid > div .cards-right > div #hat {
+  width: 65px;
+  top: -30px;
+  left: -20px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #hat {
+    width: 120px;
+    top: -60px;
+    left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #hat {
+    width: 200px;
+    top: -60px;
+    left: -40px;
+  }
+}
+.card-grid > div .cards-right > div #calculator {
+  width: 65px;
+  top: -30px;
+  left: -20px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #calculator {
+    width: 120px;
+    top: -60px;
+    left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #calculator {
+    width: 200px;
+    top: -60px;
+    left: -40px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-right > div #calculator {
+    top: -60px;
+    left: -40px;
+  }
+}
+.card-grid > div .cards-right > div #glass {
+  width: 65px;
+  top: -30px;
+  left: -20px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div #glass {
+    width: 120px;
+    top: -60px;
+    left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div #glass {
+    width: 200px;
+    top: -60px;
+    left: -40px;
+  }
+}
+@media (min-width: 1200px) {
+  .card-grid > div .cards-right > div #glass {
+    top: -60px;
+    left: -40px;
+  }
+}
+.card-grid > div .cards-right > div section {
+  z-index: 99999997;
+}
+.card-grid > div .cards-right > div section h5 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: #AB633D;
+  margin-right: -30px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div section h5 {
+    font-size: 1.5625rem;
+    margin-right: -45px;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .card-grid > div .cards-right > div section h5 {
+    font-size: 2rem;
+  }
+}
+.card-grid > div .cards-right > div aside #conceitedman-img {
+  width: 100%;
+}
+.card-grid > div .cards-right > div aside #businessman-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div aside #businessman-img {
+    padding: 35px 0;
+  }
+}
+.card-grid > div .cards-right > div aside #geographer-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 15px 0;
+}
+@media (min-width: 768px) {
+  .card-grid > div .cards-right > div aside #geographer-img {
+    padding: 55px 0;
+  }
+}
+.card-grid > div #flight-line-2 {
+  height: 80px;
+  width: 100%;
+  background-image: url("../img/encounters/card2-3-line.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding-bottom: 60px;
+  background-position: 60px -30px;
+}
+@media (min-width: 768px) {
+  .card-grid > div #flight-line-2 {
+    height: 150px;
+    background-position: 140px;
+  }
+}
+.card-grid > div #flight-line-4 {
+  height: 80px;
+  width: 100%;
+  background-image: url("../img/encounters/card4-5-line.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 20px 0px;
+  padding-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .card-grid > div #flight-line-4 {
+    height: 150px;
+    background-position: 140px;
+  }
+}
+.card-grid > div #flight-line-6 {
+  height: 80px;
+  width: 100%;
+  background-image: url("../img/encounters/card6-7-line.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 20px 0px;
+  padding-bottom: 70px;
+}
+@media (min-width: 768px) {
+  .card-grid > div #flight-line-6 {
     height: 150px;
     background-position: 140px;
   }

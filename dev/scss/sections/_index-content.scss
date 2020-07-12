@@ -171,16 +171,21 @@
     grid-template-columns: 10% auto 10%;
     grid-template-areas: ". card-grid .";
     // overflow: hidden;
+    padding-bottom: 60px;
 
     @include lg {
         grid-template-columns: 15% auto 10%;
+    }
+
+    @include xl {
+        grid-template-columns: auto 1024px auto;
     }
 
     >div {
         grid-area: card-grid;
 
 
-        .cards {
+        .cards-left {
 
             // margin-bottom: 200px;
             >div {
@@ -204,13 +209,18 @@
                     top: -30px;
                     left: -20px;
 
-                    display: flex;
-                    justify-content: center;
+                    // display: flex;
+                    // justify-content: center;
                     // margin: 0 20px;
 
                     @include md {
                         top: -50px;
                         left: -40px;
+                    }
+
+                    @include lg {
+                        top: -80px;
+                        left: -80px;
                     }
 
                     #planet {
@@ -220,18 +230,32 @@
                         @include md {
                             width: 120px;
                         }
+
+                        @include lg {
+                            width: 240px;
+                        }
                     }
 
                     #asteroid-number {
-                        font-size: rem-calc(36);
+                        font-size: rem-calc(30);
                         color: $h1-brown;
-                        text-align: center;
-                        margin-left: 10px;
+                        text-align: left;
+                        margin-left: 80px;
+                        margin-top: -55px;
+
 
                         @include md {
                             padding-top: 10px;
-                            margin-left: 20px;
+                            margin-left: 140px;
+                            margin-top: -95px;
                             font-size: rem-calc(45);
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(60);
+                            padding-top: 22px;
+                            margin-left: 260px;
+                            margin-top: -180px;
                         }
                     }
                 }
@@ -246,6 +270,65 @@
                         width: 120px;
                         top: 310px;
                         left: 520px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: 420px;
+                        left: 600px;
+                    }
+
+                    @include xl {
+                        top: 570px;
+                        left: 880px;
+                    }
+                }
+
+                #bottle {
+                    width: 65px;
+                    top: 170px;
+                    left: 260px;
+                    overflow: hidden;
+
+                    @include md {
+                        width: 120px;
+                        top: 310px;
+                        left: 520px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: 420px;
+                        left: 600px;
+                    }
+
+                    @include xl {
+                        top: 570px;
+                        left: 880px;
+                    }
+                }
+
+                #lamp {
+                    width: 65px;
+                    top: 170px;
+                    left: 260px;
+                    overflow: hidden;
+
+                    @include md {
+                        width: 120px;
+                        top: 310px;
+                        left: 520px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: 420px;
+                        left: 600px;
+                    }
+
+                    @include xl {
+                        top: 570px;
+                        left: 880px;
                     }
                 }
 
@@ -276,6 +359,19 @@
                             margin-top: -20px;
                         }
                     }
+
+
+                    #tippler-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    #lamplighter-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
 
                 section {
@@ -288,6 +384,10 @@
                         @include md {
                             font-size: rem-calc(25);
                             margin-left: -20px;
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(32);
                         }
                     }
                 }
@@ -303,6 +403,295 @@
             // border: 1px solid red;
             // background-position: -100px 500px;
             background-position: 50px;
+            padding-bottom: 70px;
+
+            @include md {
+                height: 150px;
+                background-position: 140px;
+            }
+        }
+
+        #flight-line-3 {
+            height: 80px;
+            width: 100%;
+            background-image: url("../img/encounters/card3-4-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 20px 0px;
+            padding-bottom: 70px;
+
+            @include md {
+                height: 150px;
+                background-position: 140px;
+            }
+        }
+
+        #flight-line-5 {
+            height: 80px;
+            width: 100%;
+            background-image: url("../img/encounters/card5-6-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 30px -200px;
+            padding-bottom: 70px;
+
+            @include md {
+                height: 150px;
+                background-position: 140px;
+            }
+        }
+
+        .cards-right {
+
+            // margin-bottom: 200px;
+            >div {
+                background-color: $card-pink;
+                border-radius: 16px;
+                padding: 25px 20px;
+                position: relative;
+                display: grid;
+                grid-template-columns: auto 45%;
+
+                @include lg {
+                    border-radius: 33px;
+                    padding: 70px 50px;
+                }
+
+                .card-icon {
+                    position: absolute;
+                }
+
+                #card-info {
+                    top: 195px;
+                    left: 70px;
+
+                    // display: flex;
+                    // justify-content: flex-end;
+                    // margin: 0 20px;
+                    // overflow: hidden;
+
+                    @include md {
+                        top: 370px;
+                        left: 290px;
+                    }
+
+                    @include lg {
+                        top: 480px;
+                        left: 300px;
+                    }
+
+                    @include xl {
+                        top: 650px;
+                        left: 540px;
+                    }
+
+                    #planet {
+                        width: 75px;
+                        overflow: hidden;
+
+                        @include md {
+                            width: 120px;
+                        }
+
+                        @include lg {
+                            width: 240px;
+                        }
+                    }
+
+                    #asteroid-number {
+                        font-size: rem-calc(30);
+                        color: $h1-brown;
+                        text-align: left;
+                        margin-left: 85px;
+                        margin-top: -65px;
+
+                        @include md {
+                            padding-top: 10px;
+                            margin-left: 140px;
+                            margin-top: -95px;
+                            font-size: rem-calc(45);
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(60);
+                            padding-top: 22px;
+                            margin-left: 255px;
+                            margin-top: -180px;
+                        }
+                    }
+                }
+
+                #hat {
+                    width: 65px;
+                    top: -30px;
+                    left: -20px;
+                    overflow: hidden;
+
+                    @include md {
+                        width: 120px;
+                        top: -60px;
+                        left: -40px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: -60px;
+                        left: -40px;
+                    }
+
+
+                }
+
+                #calculator {
+                    width: 65px;
+                    top: -30px;
+                    left: -20px;
+                    overflow: hidden;
+
+                    @include md {
+                        width: 120px;
+                        top: -60px;
+                        left: -40px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: -60px;
+                        left: -40px;
+                    }
+                
+
+                    @include xl {
+                        top: -60px;
+                        left: -40px;
+                    }
+                }
+
+                #glass {
+                    width: 65px;
+                    top: -30px;
+                    left: -20px;
+                    overflow: hidden;
+
+                    @include md {
+                        width: 120px;
+                        top: -60px;
+                        left: -40px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: -60px;
+                        left: -40px;
+                    }
+                
+                    @include xl {
+                        top: -60px;
+                        left: -40px;
+                    }
+                }
+
+                section {
+                    z-index: 99999997;
+
+                    h5 {
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: rem-calc(16);
+                        color: $h1-brown;
+                        margin-right: -30px;
+                        text-align: right;
+                        // z-index: 99999997;
+
+                        @include md {
+                            font-size: rem-calc(25);
+                            margin-right: -45px;
+                            margin-top: 100px;
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(32);
+                        }
+                    }
+                }
+
+                aside {
+                    #conceitedman-img {
+                        width: 100%;
+                    }
+
+                    #businessman-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                        padding: 15px 0;
+
+                        @include md {
+                            padding: 35px 0;
+                        }
+                    }
+
+                    #geographer-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                        padding: 15px 0;
+
+                        @include md {
+                            padding: 55px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        #flight-line-2 {
+            height: 80px;
+            width: 100%;
+            background-image: url("../img/encounters/card2-3-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            padding-bottom: 60px;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 60px -30px; 
+
+            @include md {
+                height: 150px;
+                background-position: 140px;
+            }
+        }
+
+        #flight-line-4 {
+            height: 80px;
+            width: 100%;
+            background-image: url("../img/encounters/card4-5-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 20px 0px;
+            padding-bottom: 70px;
+
+            @include md {
+                height: 150px;
+                background-position: 140px;
+            }
+        }
+
+        #flight-line-6 {
+            height: 80px;
+            width: 100%;
+            background-image: url("../img/encounters/card6-7-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 20px 0px;
+            padding-bottom: 70px;
 
             @include md {
                 height: 150px;
@@ -311,81 +700,3 @@
         }
     }
 }
-
-
-
-
-// #card1 {
-//     display: grid;
-//     grid-template-columns: repeat(10, 27px);
-//     grid-template-rows: repeat(9, 25px);
-//     // grid-template-columns: repeat(10, 1fr);
-//     // grid-template-rows: repeat(9, 1fr);
-
-//     #card1-info {
-//         grid-column: 1 / span 5;
-//         grid-row: 1 / span 2;
-//         z-index: 100;
-
-//         display: grid;
-//         grid-template-columns: repeat(2, 77px);
-//         // grid-template-columns: repeat(2, 1fr);
-//         column-gap: 5px;
-//         grid-template-areas: "icon name";
-
-//         #card1-icon {
-//             grid-area: icon;
-
-//             img {
-//                 width: 75px;
-//             }
-//         }
-
-//         #card1-name {
-//             grid-area: name;
-
-//             display: grid;
-//             grid-template-rows: repeat(2, 23px);
-//             // grid-template-rows: repeat(2, 1fr);
-//             grid-template-areas: "asteroid"
-//                 "number";
-
-//             h4 {
-//                 grid-area: asteroid;
-//                 font-family: 'Roboto Mono', monospace;
-//                 font-size: rem-calc(16);
-//                 color: $h1-brown;
-//             }
-
-//             h1 {
-//                 grid-area: number;
-//                 font-family: 'Yeseva One', serif;
-//                 font-size: rem-calc(36);
-//                 color: $h1-brown;
-//             }
-//         }
-//     }
-
-//     #card1-content {
-//         grid-column: 2 / span 9;
-//         grid-row: 1 / span 7;
-//         background-color: $card-pink;
-//         border-radius: 15px;
-
-//         display: grid;
-//         grid-template-columns: repeat(11, 23px);
-//         grid-template-rows: repeat(7, 26px);
-//         // grid-template-columns: repeat(11, 1fr);
-//         // grid-template-rows: repeat(7, 1fr);
-
-//         #card1-image {
-//             grid-column: 0.5 / span 5;
-//             grid-row: 2 / span 5;
-
-//             img {
-//                 width: 120px;
-//             }
-//         }
-
-//     }
-// }

@@ -96,6 +96,171 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/encounters/card2-3-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card2-3-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card2/conceitedman.jpg": {
+		"ft": 16384,
+		"iS": 162809,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/card2/conceitedman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/encounters/card2/hat.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card2/hat.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card3-4-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card3-4-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card3/bottle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card3/bottle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card3/tippler.jpg": {
+		"ft": 16384,
+		"iS": 175976,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/card3/tippler.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/encounters/card4-5-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card4-5-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card4/businessman.jpg": {
+		"ft": 16384,
+		"iS": 87227,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/card4/businessman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/encounters/card4/calculator.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card4/calculator.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card5-6-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card5-6-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card5/lamp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card5/lamp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card5/lamplighter.jpg": {
+		"ft": 16384,
+		"iS": 74954,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/card5/lamplighter.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/deploy/img/encounters/card6-7-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card6-7-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card6/geographer.jpg": {
+		"ft": 16384,
+		"iS": 147657,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/card6/geographer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/encounters/card6/glass.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card6/glass.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/encounters/card7-8-line.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/encounters/card7-8-line.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/deploy/img/encounters/quote-mark.svg": {
 		"ft": 2097152,
 		"miP": 0,
