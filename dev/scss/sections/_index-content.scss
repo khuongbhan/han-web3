@@ -475,7 +475,7 @@
                     // overflow: hidden;
 
                     @include md {
-                        top: 370px;
+                        top: 400px;
                         left: 290px;
                     }
 
@@ -696,6 +696,172 @@
             @include md {
                 height: 150px;
                 background-position: 140px;
+            }
+
+            @include xl {
+                padding-bottom: 200px;
+            }
+        }
+
+        .cards-middle {
+            display: grid;
+            grid-template-columns: 5% auto 5%;
+            grid-template-areas: " . inside .";
+
+            // margin-bottom: 200px;
+            >div {
+                grid-area: inside;
+                background-color: $card-pink;
+                border-radius: 16px;
+                padding: 25px 20px;
+                position: relative;
+                display: grid;
+                grid-template-rows: 10% auto;
+                grid-template-areas: "text"
+                                    "image";
+
+                @include lg {
+                    border-radius: 33px;
+                    padding: 70px 50px;
+                }
+
+                .card-icon {
+                    position: absolute;
+                }
+
+                #rose-planet {
+                    width: 60px;
+                    top: -20px;
+                    left: 230px;
+
+                    @include md {
+                        width: 140px;
+                        top: -60px;
+                        left: 450px;
+                    }
+
+                    @include lg {
+                        width: 200px;
+                        top: -80px;
+                        left: 570px;
+                    }
+
+                    @include xl {
+                        width: 240px;
+                        top: -90px;
+                        left: 770px;
+                    }
+                }
+
+                #asteroid-number {
+                    font-size: rem-calc(30);
+                    color: $h1-brown;
+                    text-align: center;
+                    // margin-left: 80px;
+                    margin-top: -300px;
+
+
+                    @include md {
+                        // padding-top: 10px;
+                        // margin-left: 140px;
+                        margin-top: -640px;
+                        font-size: rem-calc(50);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(60);
+                        // padding-top: 22px;
+                        // margin-left: 260px;
+                        margin-top: -750px;
+                    }
+
+                    @include xl {
+                        font-size: rem-calc(60);
+                        margin-top: -980px;
+                    }
+                }
+
+                #b612-number {
+                    font-size: rem-calc(30);
+                    color: $h1-brown;
+                    text-align: center;
+                    // margin-left: 80px;
+                    margin-top: -250px;
+
+
+                    @include md {
+                        // padding-top: 10px;
+                        // margin-left: 140px;
+                        margin-top: -470px;
+                        font-size: rem-calc(50);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(64);
+                        // padding-top: 22px;
+                        // margin-left: 260px;
+                        margin-top: -570px;
+                    }
+
+                    @include xl {
+                        font-size: rem-calc(64);
+                        margin-top: -730px;
+                    }
+                }
+
+                aside {
+                    grid-area: image;
+                    
+                    #narrator-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    #flower-img {
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                section {
+                    grid-area: text;
+
+                    h5 {
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: rem-calc(16);
+                        color: $h1-brown;
+                        text-align: center;
+                        margin-top: -10px;
+
+                        @include md {
+                            font-size: rem-calc(25);
+                            // margin-left: -20px;
+                        }
+
+                        @include lg {
+                            font-size: rem-calc(32);
+                        }
+                    }
+                }
+            }
+        }
+
+        #flight-line-7 {
+            height: 40px;
+            width: 100%;
+            background-image: url("../img/encounters/card7-8-line.svg");
+            background-repeat: no-repeat;
+            overflow: hidden;
+            // border: 1px solid red;
+            // background-position: -100px 500px;
+            background-position: 0 -130px;
+            padding-bottom: 70px;
+
+            @include md {
+                height: 150px;
+                background-position: 90px -50px;
             }
         }
     }

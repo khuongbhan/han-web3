@@ -261,6 +261,39 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/encounters/earth/fox.jpg": {
+		"ft": 16384,
+		"iS": 201960,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/earth/fox.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/encounters/earth/narrator.jpg": {
+		"ft": 16384,
+		"iS": 136207,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/earth/narrator.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/encounters/earth/snake.jpg": {
+		"ft": 16384,
+		"iS": 194733,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/encounters/earth/snake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/encounters/quote-mark.svg": {
 		"ft": 2097152,
 		"miP": 0,
