@@ -96,41 +96,65 @@
                 </section>
             </div>
         </section>
-    <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <!-- Greensock -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-            <!-- FancyBox -->
-            <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-            <!-- Tiny Slider -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-            <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-            
-            
-            <script src="js/scripts-min.js"></script>
+        
+        <section id="about-location" class="grid-container content-spacing">
+            <div>
+                <h1>where he met the little prince</h1>
+                <div id="map"></div>
+            </div>
+        </section>
     <footer class="grid-container">
-                    <div>
-                        <h1>join our newsletter!</h1>
-                        <form action='#'>
-                            <section>
-                                <div>
-                                    <input type="text" placeholder="example@abc.com">
-                                </div>
-                                <div>
-                                    <button class="button">join us</button>
-                                </div>
-                            </section>
-                        </form>
-                
-                        <ul>
-                            <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
-                            </li>
-                            <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-                </footer>
+                <div>
+                    <h1>join our newsletter!</h1>
+                    <form action='#'>
+                        <section>
+                            <div>
+                                <input type="text" placeholder="example@abc.com">
+                            </div>
+                            <div>
+                                <button class="button">join us</button>
+                            </div>
+                        </section>
+                    </form>
+            
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQ8IwpzkMz1qEO_df3oVRtOhyNZ88BG0&callback=initMap">
+            </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    
+    
+    <script src="js/scripts-min.js"></script>
 
 </body>
 

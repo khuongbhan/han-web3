@@ -873,6 +873,13 @@ pre[class*=language-] {
 }
 
 /* =============
+    Juicer
+============= */
+.referral {
+  display: none !important;
+}
+
+/* =============
     Header
 ============= */
 header div {
@@ -2463,7 +2470,7 @@ footer > div ul li a:visited:active {
 }
 @media (min-width: 992px) {
   #friends-container #banner-container #quote #text {
-    margin-left: -120px;
+    margin-left: -450px;
   }
 }
 @media (min-width: 768px) {
@@ -2700,4 +2707,29 @@ footer > div ul li a:visited:active {
 }
 #slider > div .tns-nav > .tns-nav-active {
   background: #F7E1D8;
+}
+
+#about-location {
+  padding-bottom: 50px;
+}
+#about-location > div h1 {
+  text-align: center;
+  color: #51787A;
+  font-size: 1.875rem;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #about-location > div h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #about-location > div h1 {
+    font-size: 3.75rem;
+  }
+}
+#about-location > div #map {
+  width: 100%;
+  height: 400px;
+  background-color: #F7E1D8;
 }

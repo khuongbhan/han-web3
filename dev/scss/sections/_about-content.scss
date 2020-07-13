@@ -258,3 +258,29 @@
         }
     }
 }
+
+#about-location {
+    padding-bottom: 50px;
+    >div {
+        h1 {
+            text-align: center;
+            color: $quote-teal;
+            font-size: rem-calc(30);
+            padding-bottom: 20px;
+
+            @include md {
+                font-size: rem-calc(40);
+            }
+
+            @include lg {
+                font-size: rem-calc(60);
+            }
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: $card-pink;
+        }
+    }
+}
