@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/deploy/about.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -34,6 +42,61 @@
 		"oA": 0,
 		"oAP": "/deploy/hindsight.html",
 		"oF": 0
+		},
+	"/deploy/img/about/slider/slide1.jpg": {
+		"ft": 16384,
+		"iS": 42433,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/slider/slide1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/about/slider/slide2.jpg": {
+		"ft": 16384,
+		"iS": 68273,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/slider/slide2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/about/slider/slide3.jpg": {
+		"ft": 16384,
+		"iS": 98833,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/slider/slide3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/about/slider/slide4.jpg": {
+		"ft": 16384,
+		"iS": 164986,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/slider/slide4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/about/slider/slide5.jpg": {
+		"ft": 16384,
+		"iS": 185632,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/about/slider/slide5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/deploy/img/cursor.svg": {
 		"ft": 2097152,
@@ -458,6 +521,22 @@
 		"oAP": "/deploy/wonders.html",
 		"oF": 0
 		},
+	"/dev/about.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/about.html",
+		"oF": 2
+		},
+	"/dev/content/about-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/about-content.html",
+		"oF": 0
+		},
 	"/dev/content/friends-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -731,6 +810,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_about-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_about-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

@@ -1984,33 +1984,6 @@ footer > div ul li a:visited:active {
   }
 }
 
-#slider > div .my-slider div {
-  height: 800px;
-}
-#slider > div .my-slider div img {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-}
-#slider > div .tns-controls [aria-controls] {
-  font-family: "Roboto Mono", monospace;
-  margin: 0 5px;
-  padding: 0 1em;
-  height: 2.5em;
-  color: #C88968;
-  border: 1px #C88968 solid;
-  background: none;
-  border-radius: 26px;
-}
-#slider > div .tns-controls [aria-controls]:hover {
-  background-color: #C88968;
-  color: #fff;
-}
-#slider > div .tns-nav > .tns-nav-active {
-  background: #F7E1D8;
-}
-
 /* =============
     Index Content
 ============= */
@@ -2507,6 +2480,9 @@ footer > div ul li a:visited:active {
 /* =============
     Wonders Content
 ============= */
+/* =============
+    About Content
+============= */
 @media (min-width: 768px) {
   #about-container {
     display: grid;
@@ -2684,7 +2660,7 @@ footer > div ul li a:visited:active {
     margin-top: -100px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #introductions-container #introductions #visit-button .button {
     margin-top: -180px;
   }
@@ -2692,4 +2668,31 @@ footer > div ul li a:visited:active {
 #introductions-container #introductions #visit-button .button:hover {
   background-color: #C88968;
   color: #fff;
+}
+
+#slider > div .my-slider div {
+  height: 800px;
+}
+#slider > div .my-slider div img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+#slider > div .tns-controls [aria-controls] {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #C88968;
+  border: 1px #C88968 solid;
+  background: none;
+  border-radius: 26px;
+}
+#slider > div .tns-controls [aria-controls]:hover {
+  background-color: #C88968;
+  color: #fff;
+}
+#slider > div .tns-nav > .tns-nav-active {
+  background: #F7E1D8;
 }
