@@ -212,7 +212,11 @@
     >div {
         .my-slider {
             div {
-                height: 800px;
+                height: 400px;
+
+                @include md {
+                    height: 800px;
+                }
 
                 img {
                     object-fit: cover;

@@ -2671,7 +2671,12 @@ footer > div ul li a:visited:active {
 }
 
 #slider > div .my-slider div {
-  height: 800px;
+  height: 400px;
+}
+@media (min-width: 768px) {
+  #slider > div .my-slider div {
+    height: 800px;
+  }
 }
 #slider > div .my-slider div img {
   object-fit: cover;
