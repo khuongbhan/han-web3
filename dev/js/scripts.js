@@ -40,6 +40,7 @@ $burger.on( "click", myFunction);
 // $navA.on( "click", mouseClick);
 
 // @codekit-prepend "fancybox.js";
+// @codekit-prepend "tinyslider.js";
 
 
 $( document ).ready(function() {
