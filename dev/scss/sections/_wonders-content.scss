@@ -1,3 +1,106 @@
 /* =============
     Wonders Content
 ============= */
+#wonders-container {
+    padding-bottom: 100px;
+
+    @include md {
+        display: grid;
+        grid-template-columns: 10% auto;
+        grid-template-areas: ". container";
+    }
+
+    #banner-container {
+        grid-area: container;
+
+        #section-title {
+            color: $h1-brown;
+            font-size: rem-calc(25);
+            text-align: center;
+            padding-bottom: 20px;
+
+            @include md {
+                font-size: rem-calc(30);
+                text-align: left;
+                padding-bottom: 5px;
+            }
+
+            @include lg {
+                font-size: rem-calc(50);
+            }
+        }
+
+        #slash {
+            img {
+                width: 65px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-bottom: 5px;
+                padding-top: 10px;
+
+                @include md {
+                    width: 80px;
+                    margin-left: 200px;
+                }
+
+                @include lg {
+                    width: 135px;
+                    margin-left: 300px;
+                }
+            }
+        }
+
+        #quote {
+            #text {
+                @include md {
+                    margin-top: 10px;
+                    margin-left: 200px;
+                    margin-right: 60px;
+                }
+
+                @include lg {
+                    margin-top: 30px;
+                    margin-left: 300px;
+                    margin-right: 100px;
+                }
+
+                h2 {
+                    font-size: rem-calc(30);
+                    color: $quote-teal;
+                    text-align: center;
+
+                    @include md {
+                        font-size: rem-calc(40);
+                        text-align: left;
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(60);
+                    }
+                }
+            }
+
+            #box {
+                background-color: $card-pink;
+                // margin-right: -100px;
+                // padding: 40px 40px;
+                overflow: hidden;
+
+                @include md {
+                    padding-top: 250px;
+                    padding-bottom: 150px;
+                    margin-left: 400px;
+                    margin-top: -300px;
+
+                }
+
+                @include lg {
+                    padding: 150px;
+                    margin-left: 400px;
+                    margin-top: -200px;
+                }
+            }
+        }
+    }
+}

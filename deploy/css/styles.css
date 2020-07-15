@@ -2487,6 +2487,107 @@ footer > div ul li a:visited:active {
 /* =============
     Wonders Content
 ============= */
+#wonders-container {
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  #wonders-container {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-areas: ". container";
+  }
+}
+#wonders-container #banner-container {
+  grid-area: container;
+}
+#wonders-container #banner-container #section-title {
+  color: #AB633D;
+  font-size: 1.5625rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #wonders-container #banner-container #section-title {
+    font-size: 1.875rem;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container #banner-container #section-title {
+    font-size: 3.125rem;
+  }
+}
+#wonders-container #banner-container #slash img {
+  width: 65px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  #wonders-container #banner-container #slash img {
+    width: 80px;
+    margin-left: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container #banner-container #slash img {
+    width: 135px;
+    margin-left: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #wonders-container #banner-container #quote #text {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 60px;
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container #banner-container #quote #text {
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 100px;
+  }
+}
+#wonders-container #banner-container #quote #text h2 {
+  font-size: 1.875rem;
+  color: #51787A;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #wonders-container #banner-container #quote #text h2 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container #banner-container #quote #text h2 {
+    font-size: 3.75rem;
+  }
+}
+#wonders-container #banner-container #quote #box {
+  background-color: #F7E1D8;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #wonders-container #banner-container #quote #box {
+    padding-top: 250px;
+    padding-bottom: 150px;
+    margin-left: 400px;
+    margin-top: -300px;
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container #banner-container #quote #box {
+    padding: 150px;
+    margin-left: 400px;
+    margin-top: -200px;
+  }
+}
+
 /* =============
     About Content
 ============= */
@@ -2732,4 +2833,14 @@ footer > div ul li a:visited:active {
   width: 100%;
   height: 400px;
   background-color: #F7E1D8;
+}
+@media (min-width: 768px) {
+  #about-location > div #map {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  #about-location > div #map {
+    height: 600px;
+  }
 }
