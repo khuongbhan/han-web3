@@ -2,7 +2,7 @@
     Wonders Content
 ============= */
 #wonders-container {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
     @include md {
         display: grid;
@@ -99,6 +99,125 @@
                     padding: 150px;
                     margin-left: 400px;
                     margin-top: -200px;
+                }
+            }
+        }
+    }
+}
+
+#wonders-form {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: ". container .";
+
+    @include md {
+        grid-template-columns: 20% auto 20%;
+    }
+
+    >div {
+        grid-area: container;
+
+        #form-container {
+            #form {
+                display: grid;
+                gap: 40px;
+
+                @include md {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas:
+                        "name email"
+                        "message message"
+                        ".send";
+                }
+
+                section {
+                    input {
+                        border: none;
+                        border-bottom: 1px $dark-brown solid;
+                        border-radius: 0;
+                        width: 100%;
+                        padding: 4% 0 10px 10px;
+                        color: $dark-brown;
+                        font-family: 'Roboto Mono', monospace;
+                    }
+
+                    textarea {
+                        border: none;
+                        border-bottom: 1px $dark-brown solid;
+                        border-radius: 0;
+                        width: 100%;
+                        height: 100px;
+                        padding: 4% 10px;
+                        color: $dark-brown;
+                        font-family: 'Roboto Mono', monospace;
+                    }
+
+                    ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: $placeholder;
+                        opacity: 1;
+                    }
+
+                    :-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: $placeholder;
+                    }
+
+                    ::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: $placeholder;
+                    }
+                }
+
+                section:nth-child(1) {
+                    @include md {
+                        grid-area: name;
+                    }
+                }
+
+                section:nth-child(2) {
+                    @include md {
+                        grid-area: email;
+                    }
+                }
+
+                section:nth-child(3) {
+                    @include md {
+                        grid-area: message;
+                    }
+                }
+
+                section:nth-child(4) {
+                    padding-bottom: 30px;
+
+                    .button {
+                        background-color: $white;
+                        border: 1px $button-brown solid;
+                        border-radius: 26px;
+                        color: $button-brown;
+                        cursor: pointer;
+                        font-family: 'Roboto Mono', monospace;
+                        padding: 10px 25px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        @include md {
+                            font-size: rem-calc(20);
+                            padding: 10px 30px;
+                            margin-left: 0;
+                        }
+
+                        &:hover {
+                            background-color: $button-brown;
+                            color: $white;
+                        }
+                    }
+
+                    @include md {
+                        margin-left: -70px;
+                        grid-area: send;
+                    }
                 }
             }
         }

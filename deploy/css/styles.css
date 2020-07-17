@@ -2316,8 +2316,46 @@ footer > div ul li a:visited:active {
   width: 100%;
 }
 
+#thoughts-button .button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background: none;
+  border: 1px #C88968 solid;
+  border-radius: 30px;
+  color: #C88968;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #thoughts-button .button {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #thoughts-button .button {
+    margin-top: 30px;
+  }
+}
+#thoughts-button .button:hover {
+  background-color: #C88968;
+  color: #fff;
+}
+
 #ending-quote {
   padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #ending-quote {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 768px) {
+  #ending-quote {
+    margin-top: -70px;
+  }
 }
 #ending-quote #ending-container #slash {
   padding-bottom: 30px;
@@ -2327,6 +2365,7 @@ footer > div ul li a:visited:active {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 30px;
 }
 @media (min-width: 768px) {
   #ending-quote #ending-container #slash img {
@@ -2488,7 +2527,7 @@ footer > div ul li a:visited:active {
     Wonders Content
 ============= */
 #wonders-container {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   #wonders-container {
@@ -2585,6 +2624,109 @@ footer > div ul li a:visited:active {
     padding: 150px;
     margin-left: 400px;
     margin-top: -200px;
+  }
+}
+
+#wonders-form {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: ". container .";
+}
+@media (min-width: 768px) {
+  #wonders-form {
+    grid-template-columns: 20% auto 20%;
+  }
+}
+#wonders-form > div {
+  grid-area: container;
+}
+#wonders-form > div #form-container #form {
+  display: grid;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name email" "message message" ".send";
+  }
+}
+#wonders-form > div #form-container #form section input {
+  border: none;
+  border-bottom: 1px #4F2E1C solid;
+  border-radius: 0;
+  width: 100%;
+  padding: 4% 0 10px 10px;
+  color: #4F2E1C;
+  font-family: "Roboto Mono", monospace;
+}
+#wonders-form > div #form-container #form section textarea {
+  border: none;
+  border-bottom: 1px #4F2E1C solid;
+  border-radius: 0;
+  width: 100%;
+  height: 100px;
+  padding: 4% 10px;
+  color: #4F2E1C;
+  font-family: "Roboto Mono", monospace;
+}
+#wonders-form > div #form-container #form section ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7D736D;
+  opacity: 1;
+}
+#wonders-form > div #form-container #form section :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #7D736D;
+}
+#wonders-form > div #form-container #form section ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #7D736D;
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form section:nth-child(1) {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form section:nth-child(2) {
+    grid-area: email;
+  }
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form section:nth-child(3) {
+    grid-area: message;
+  }
+}
+#wonders-form > div #form-container #form section:nth-child(4) {
+  padding-bottom: 30px;
+}
+#wonders-form > div #form-container #form section:nth-child(4) .button {
+  background-color: #fff;
+  border: 1px #C88968 solid;
+  border-radius: 26px;
+  color: #C88968;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form section:nth-child(4) .button {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    margin-left: 0;
+  }
+}
+#wonders-form > div #form-container #form section:nth-child(4) .button:hover {
+  background-color: #C88968;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #wonders-form > div #form-container #form section:nth-child(4) {
+    margin-left: -70px;
+    grid-area: send;
   }
 }
 
