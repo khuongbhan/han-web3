@@ -33,19 +33,56 @@
         }
 
         #main-menu {
-            #ul {
+            ul {
+                margin-top: -30px;
                 li {
-                    a {
-                        font-family: 'Yeseva One', serif;
-                        font-size: rem-calc(35);
-                        text-align: center;
-                        color: $dark-brown;
-                    }
+                    text-align: center;
+                    margin-bottom: 10px;
 
                     a:link,
                     a:visited {
+                        font-family: 'Yeseva One', serif;
+                        font-size: rem-calc(35);
+                        // line-height: rem-calc(40);
+                        color: $dark-brown;
+
+                        // span {
+                        //     display: none;
+                        // }
+                    }
+
+                    a:active,
+                    a:hover {
+                        transition: 0.25s;
+                        font-style: italic;
                         color: $h1-brown;
+                        border-bottom: 3px $h1-brown solid;
+                        // border-radius: 1px;
                         text-decoration: none;
+
+                        // span {
+                        //     display: block;
+                        //     font-family: 'Roboto Mono', monospace;
+                        //     font-size: rem-calc(12);
+                        // }
+                    }
+                }
+            }
+        }
+
+        #side-menu {
+            #side-1 {
+                margin-top: 30px;
+                li {
+                    text-align: center;
+                    margin-bottom: 5px;
+
+                    a:link,
+                    a:visited {
+                        font-family: 'Roboto Mono', monospace;
+                        font-size: rem-calc(12);
+                        text-align: center;
+                        color: $dark-brown;
                     }
 
                     a:active,
@@ -54,33 +91,7 @@
                         text-decoration: none;
                     }
                 }
-            }
-        }
 
-        #side-menu {
-            #side-1 {
-                ul {
-                    li {
-                        a {
-                            font-family: 'Yeseva One', serif;
-                            font-size: rem-calc(35);
-                            text-align: center;
-                            color: $dark-brown;
-                        }
-    
-                        a:link,
-                        a:visited {
-                            color: $h1-brown;
-                            text-decoration: none;
-                        }
-    
-                        a:active,
-                        a:hover {
-                            color: $h1-brown;
-                            text-decoration: none;
-                        }
-                    }
-                }
             }
 
             #side-2 {

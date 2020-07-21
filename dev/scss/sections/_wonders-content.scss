@@ -2,12 +2,18 @@
     Wonders Content
 ============= */
 #wonders-container {
+    margin-top: 70px;
     padding-bottom: 50px;
 
     @include md {
+        margin-top: 90px;
         display: grid;
         grid-template-columns: 10% auto;
         grid-template-areas: ". container";
+    }
+
+    @include lg {
+        margin-top: 100px;
     }
 
     #banner-container {

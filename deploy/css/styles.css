@@ -474,35 +474,43 @@ textarea {
 #main-nav #nav-container #image {
   display: none;
 }
-#main-nav #nav-container #main-menu #ul li a {
+#main-nav #nav-container #main-menu ul {
+  margin-top: -30px;
+}
+#main-nav #nav-container #main-menu ul li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#main-nav #nav-container #main-menu ul li a:link,
+#main-nav #nav-container #main-menu ul li a:visited {
   font-family: "Yeseva One", serif;
   font-size: 2.1875rem;
+  color: #4F2E1C;
+}
+#main-nav #nav-container #main-menu ul li a:active,
+#main-nav #nav-container #main-menu ul li a:hover {
+  transition: 0.25s;
+  font-style: italic;
+  color: #AB633D;
+  border-bottom: 3px #AB633D solid;
+  text-decoration: none;
+}
+#main-nav #nav-container #side-menu #side-1 {
+  margin-top: 30px;
+}
+#main-nav #nav-container #side-menu #side-1 li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+#main-nav #nav-container #side-menu #side-1 li a:link,
+#main-nav #nav-container #side-menu #side-1 li a:visited {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
   text-align: center;
   color: #4F2E1C;
 }
-#main-nav #nav-container #main-menu #ul li a:link,
-#main-nav #nav-container #main-menu #ul li a:visited {
-  color: #AB633D;
-  text-decoration: none;
-}
-#main-nav #nav-container #main-menu #ul li a:active,
-#main-nav #nav-container #main-menu #ul li a:hover {
-  color: #AB633D;
-  text-decoration: none;
-}
-#main-nav #nav-container #side-menu #side-1 ul li a {
-  font-family: "Yeseva One", serif;
-  font-size: 2.1875rem;
-  text-align: center;
-  color: #4F2E1C;
-}
-#main-nav #nav-container #side-menu #side-1 ul li a:link,
-#main-nav #nav-container #side-menu #side-1 ul li a:visited {
-  color: #AB633D;
-  text-decoration: none;
-}
-#main-nav #nav-container #side-menu #side-1 ul li a:active,
-#main-nav #nav-container #side-menu #side-1 ul li a:hover {
+#main-nav #nav-container #side-menu #side-1 li a:active,
+#main-nav #nav-container #side-menu #side-1 li a:hover {
   color: #AB633D;
   text-decoration: none;
 }
@@ -1137,11 +1145,20 @@ footer > div ul li a:visited:active {
 /* =============
     Index Content
 ============= */
+#index-encounters {
+  margin-top: 70px;
+}
 @media (min-width: 768px) {
   #index-encounters {
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-areas: ". container";
+  }
+}
+@media (min-width: 992px) {
+  #index-encounters {
+    margin-top: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -2056,11 +2073,20 @@ footer > div ul li a:visited:active {
 /* =============
     Index Content
 ============= */
+#hindsight {
+  margin-top: 70px;
+}
 @media (min-width: 768px) {
   #hindsight {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-areas: ". container";
+  }
+}
+@media (min-width: 992px) {
+  #hindsight {
+    margin-top: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -2511,11 +2537,20 @@ footer > div ul li a:visited:active {
 /* =============
     Friends Content
 ============= */
+#friends-container {
+  margin-top: 70px;
+}
 @media (min-width: 768px) {
   #friends-container {
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-areas: ". container";
+  }
+}
+@media (min-width: 992px) {
+  #friends-container {
+    margin-top: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -2589,13 +2624,20 @@ footer > div ul li a:visited:active {
     Wonders Content
 ============= */
 #wonders-container {
+  margin-top: 70px;
   padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   #wonders-container {
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-areas: ". container";
+  }
+}
+@media (min-width: 992px) {
+  #wonders-container {
+    margin-top: 100px;
   }
 }
 #wonders-container #banner-container {
@@ -2795,11 +2837,20 @@ footer > div ul li a:visited:active {
 /* =============
     About Content
 ============= */
+#about-container {
+  margin-top: 70px;
+}
 @media (min-width: 768px) {
   #about-container {
+    margin-top: 90px;
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-areas: ". container";
+  }
+}
+@media (min-width: 992px) {
+  #about-container {
+    margin-top: 100px;
   }
 }
 #about-container #banner-container {
