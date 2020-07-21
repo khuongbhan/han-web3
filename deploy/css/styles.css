@@ -458,6 +458,61 @@ textarea {
 /* =============
     Navigation
 ============= */
+#main-nav {
+  background-color: #F7E1D8;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+}
+#main-nav #nav-container #image {
+  display: none;
+}
+#main-nav #nav-container #main-menu #ul li a {
+  font-family: "Yeseva One", serif;
+  font-size: 2.1875rem;
+  text-align: center;
+  color: #4F2E1C;
+}
+#main-nav #nav-container #main-menu #ul li a:link,
+#main-nav #nav-container #main-menu #ul li a:visited {
+  color: #AB633D;
+  text-decoration: none;
+}
+#main-nav #nav-container #main-menu #ul li a:active,
+#main-nav #nav-container #main-menu #ul li a:hover {
+  color: #AB633D;
+  text-decoration: none;
+}
+#main-nav #nav-container #side-menu #side-1 ul li a {
+  font-family: "Yeseva One", serif;
+  font-size: 2.1875rem;
+  text-align: center;
+  color: #4F2E1C;
+}
+#main-nav #nav-container #side-menu #side-1 ul li a:link,
+#main-nav #nav-container #side-menu #side-1 ul li a:visited {
+  color: #AB633D;
+  text-decoration: none;
+}
+#main-nav #nav-container #side-menu #side-1 ul li a:active,
+#main-nav #nav-container #side-menu #side-1 ul li a:hover {
+  color: #AB633D;
+  text-decoration: none;
+}
+#main-nav #nav-container #side-menu #side-2 {
+  display: none;
+}
+#main-nav #nav-container #side-menu #side-3 {
+  display: none;
+}
+
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
   color: #C88968;
 }
@@ -882,6 +937,13 @@ pre[class*=language-] {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 header div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1651,7 +1713,7 @@ footer > div ul li a:visited:active {
   }
 }
 .card-grid > div .cards-right > div section {
-  z-index: 99999997;
+  z-index: 100;
 }
 .card-grid > div .cards-right > div section h5 {
   font-family: "Roboto Mono", monospace;
