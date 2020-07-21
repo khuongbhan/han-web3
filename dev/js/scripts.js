@@ -1,49 +1,29 @@
+// var $burger = $("#burger-icon");
+// var $nav = $('nav[data-nav]');
+// var $navA = $('nav[data-nav] a');
+// var isVisible = false;
 
-var $burger = $("#burger-icon");
-var $nav = $('nav[data-nav]');
-var $navA = $('nav[data-nav] a');
-var isVisible = false;
+// function myFunction(x) {
+//     x.classList.toggle("change");
 
-function mouseClick(){
+//     console.log("click");
+//     if(isVisible === false){
+//         $nav.show();
+//         isVisible = true;
+//     }
+//     else{
+//         $nav.hide();
+//         isVisible = false;
+//     }
+// }
 
-    console.log("click");
-    if(isVisible === false){
-        $nav.show();
-        isVisible = true;
-    }
-    else{
-        $nav.hide();
-        isVisible = false;
-    }
-}
-
-function myFunction(x) {
-    x.classList.toggle("change");
-
-    console.log("click");
-    if(isVisible === false){
-        $nav.show();
-        isVisible = true;
-    }
-    else{
-        $nav.hide();
-        isVisible = false;
-    }
-}
-
-$navA.on( "click", myFunction);
-$burger.on( "click", myFunction);
-
-
-// $burger.on( "click", mouseClick);
-// // close the mobile menu when menu link is clicked
-// $navA.on( "click", mouseClick);
+// $burger.on( "click", myFunction);
 
 // @codekit-prepend "fancybox.js";
 // @codekit-prepend "tinyslider.js";
 
+// @codekit-prepend "main-nav/nav-global.js";
+// @codekit-prepend "main-nav/burger-click.js";
+// @codekit-prepend "main-nav/main-nav-click.js";
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
 

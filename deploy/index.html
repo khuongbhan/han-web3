@@ -37,7 +37,11 @@
     
             <section id="burger-container">
                 <!-- <i class="fas fa-bars"></i> -->
-                <div class="container" onclick="myFunction(this)">
+                <!-- <div class="container" onclick="myFunction(this)" id="little-burger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div> -->
+                <div class="container" id="burger">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -45,6 +49,7 @@
             </section>
         </div>
     </header>
+
     <nav id="main-nav">
             <div id="nav-container">
                 <div id="image">
@@ -61,7 +66,10 @@
                 </div>
                 <div id="side-menu">
                     <ul id="side-1">
-                        <li><a href="#">terms & conditions</a></li>
+                        <!-- <li><a href="#">terms & conditions</a></li> -->
+                        <li class="show-nav-buttons hide-nav-buttons"><button>terms & conditions</button></li>
+        
+                        <li class=" hide-nav-buttons"><a href="#">terms & conditions</a></li>
                         <li><a href="#">privacy policy</a></li>
                         <li><a href="#">customer service</a></li>
                     </ul>
@@ -74,271 +82,272 @@
                 </div>
             </div>
         </nav>
+    
     <section class="grid-container content-spacing" id="index-encounters">
-                <div id="banner-container">
-                    <div id="top-info">
-                        <div id="title">
-                            <h1>encounters</h1>
-                        </div>
-                        <div id="slash">
-                            <img src="img/encounters/slash.svg" alt="slash">
-                        </div>
-                    </div>
-                    <div id="quote">
-                        <div id="mark">
-                            <img src="img/encounters/quote-mark.svg" alt="quotation mark">
-                        </div>
-                        <div id="text">
-                            <h2>look up at the sky. ask yourself: is it yes or no? has the sheep eaten the flower?</h2>
-                        </div>
-                        <div id="box"></div>
-                    </div>
-                    <div id="scroll">
-                        <p>scroll down</p>
-                        <a href="#"><img src="img/encounters/scrolldown.svg" alt="scroll down arrow"></a>
-                        <p>to explore</p>
-                    </div>
+        <div id="banner-container">
+            <div id="top-info">
+                <div id="title">
+                    <h1>encounters</h1>
                 </div>
-            </section>
-            
-            <section class="card-grid">
+                <div id="slash">
+                    <img src="img/encounters/slash.svg" alt="slash">
+                </div>
+            </div>
+            <div id="quote">
+                <div id="mark">
+                    <img src="img/encounters/quote-mark.svg" alt="quotation mark">
+                </div>
+                <div id="text">
+                    <h2>look up at the sky. ask yourself: is it yes or no? has the sheep eaten the flower?</h2>
+                </div>
+                <div id="box"></div>
+            </div>
+            <div id="scroll">
+                <p>scroll down</p>
+                <a href="#"><img src="img/encounters/scrolldown.svg" alt="scroll down arrow"></a>
+                <p>to explore</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="card-grid">
+        <div>
+    
+            <section id="card-1" class="cards-left">
                 <div>
-            
-                    <section id="card-1" class="cards-left">
-                        <div>
-                            <img src="img/encounters/card1/crown.svg" alt="crown" class="card-icon" id="crown">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 325</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <aside>
-                                <img src="img/encounters/card1/king.jpg" alt="the king on asteroid 325" id="king-img">
-                                <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div>
-                            </aside>
-                            <section>
-                                <h5>the king</h5>
-                            </section>
+                    <img src="img/encounters/card1/crown.svg" alt="crown" class="card-icon" id="crown">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 325</h1>
+                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <aside>
+                        <img src="img/encounters/card1/king.jpg" alt="the king on asteroid 325" id="king-img">
+                        <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
                         </div>
-                    </section>
-                    <section id='flight-line-1'>
-                    </section>
-            
-                    <section id="card-2" class="cards-right">
-                        <div>
-                            <img src="img/encounters/card2/hat.svg" alt="hat" class="card-icon" id="hat">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 326</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <section>
-                                <h5>the conceited man</h5>
-                            </section>
-                            <aside>
-                                <img src="img/encounters/card2/conceitedman.jpg" alt="the conceited man on asteroid 326" id="conceitedman-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                        </div>
-                    </section>
-                    <section id='flight-line-2'>
-                    </section>
-            
-                    <section id="card-3" class="cards-left">
-                        <div>
-                            <img src="img/encounters/card3/bottle.svg" alt="crown" class="card-icon" id="bottle">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 327</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <aside>
-                                <img src="img/encounters/card3/tippler.jpg" alt="the tippler on asteroid 327" id="tippler-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                            <section>
-                                <h5>the tippler</h5>
-                            </section>
-                        </div>
-                    </section>
-                    <section id='flight-line-3'>
-                    </section>
-            
-                    <section id="card-4" class="cards-right">
-                        <div>
-                            <img src="img/encounters/card4/calculator.svg" alt="calculator" class="card-icon" id="calculator">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 328</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <section>
-                                <h5>the businessman</h5>
-                            </section>
-                            <aside>
-                                <img src="img/encounters/card4/businessman.jpg" alt="the businessman on asteroid 328" id="businessman-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                        </div>
-                    </section>
-                    <section id='flight-line-4'>
-                    </section>
-            
-                    <section id="card-5" class="cards-left">
-                        <div>
-                            <img src="img/encounters/card5/lamp.svg" alt="crown" class="card-icon" id="lamp">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 329</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <aside>
-                                <img src="img/encounters/card5/lamplighter.jpg" alt="the lamplighter on asteroid 329" id="lamplighter-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                            <section>
-                                <h5>the lamplighter</h5>
-                            </section>
-                        </div>
-                    </section>
-                    <section id='flight-line-5'>
-                    </section>
-            
-                    <section id="card-6" class="cards-right">
-                        <div>
-                            <img src="img/encounters/card6/glass.svg" alt="maginifying glass" class="card-icon" id="glass">
-                            <div id="card-info" class="card-icon">
-                                <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
-                                <h1 id="asteroid-number">asteroid 330</h1>
-                            </div>
-                            <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
-                            <section>
-                                <h5>the geographer</h5>
-                            </section>
-                            <aside>
-                                <img src="img/encounters/card6/geographer.jpg" alt="the geographer on asteroid 330" id="geographer-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                        </div>
-                    </section>
-                    <section id='flight-line-6'>
-                    </section>
-            
-                    <!-- <section class="grid-container content-spacing" id="slider">
-                        <div>
-                            <section class="my-slider">
-                                <div><img src="img/hindsight/gallery-1.jpg" alt="the little prince with the flower" id="slide1"></div>
-                                <div><img src="img/hindsight/gallery-4.jpg" alt="the little prince with the narrator" id="slide2"></div>
-                                <div><img src="img/hindsight/gallery-3.jpg" alt="the little prince with the fox" id="slide3"></div>
-                            </section>
-                        </div>
-                    </section> -->
-            
-                    <section id="card-7" class="cards-middle">
-                        <div>
-                            <h1 id="asteroid-number">earth</h1>
-                            <section>
-                                <h5>the geographer</h5>
-                            </section>
-                            <aside>
-                                <img src="img/encounters/earth/narrator.jpg" alt="the narrator on earth" id="narrator-img">
-                            </aside>
-                        </div>
-                    </section>
-                    <section id='flight-line-7'>
-                    </section>
-            
-                    <section id="card-8" class="cards-middle">
-                        <div>
-                            <h1 id="b612-number">b612</h1>
-                            <img src="img/header/logo.svg" alt="flower icon" class="card-icon" id="rose-planet">
-                            <section>
-                                <h5> the flower</h5>
-                            </section>
-                            <aside>
-                                <img src="img/encounters/b612/rose.jpg" alt="the flower on asteroid b612" id="flower-img">
-                                <!-- <div id="flip">
-                                    <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
-                                    <p id="flip-to-read">flip to read</p>
-                                </div> -->
-                            </aside>
-                        </div>
+                    </aside>
+                    <section>
+                        <h5>the king</h5>
                     </section>
                 </div>
             </section>
-            
-            <section id="index-ending-quote" class="grid-container content-spacing">
-                <div id="index-ending-container">
-                    <div id="slash">
-                        <img src="img/encounters/slash.svg" alt="slash">
+            <section id='flight-line-1'>
+            </section>
+    
+            <section id="card-2" class="cards-right">
+                <div>
+                    <img src="img/encounters/card2/hat.svg" alt="hat" class="card-icon" id="hat">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 326</h1>
                     </div>
-                    <div id="index-end-quote">
-                        <div id="index-end-mark">
-                            <img src="img/hindsight/quote-mark.svg" alt="quotation mark">
-                        </div>
-                        <div id="index-end-text">
-                            <h2>and when you are comforted, you will be happy to have known me. you will always be my friend.</h2>
-                        </div>
-                        <div id="index-end-box"></div>
-                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <section>
+                        <h5>the conceited man</h5>
+                    </section>
+                    <aside>
+                        <img src="img/encounters/card2/conceitedman.jpg" alt="the conceited man on asteroid 326" id="conceitedman-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
                 </div>
             </section>
-            
-            
-            
+            <section id='flight-line-2'>
+            </section>
+    
+            <section id="card-3" class="cards-left">
+                <div>
+                    <img src="img/encounters/card3/bottle.svg" alt="crown" class="card-icon" id="bottle">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 327</h1>
+                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <aside>
+                        <img src="img/encounters/card3/tippler.jpg" alt="the tippler on asteroid 327" id="tippler-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
+                    <section>
+                        <h5>the tippler</h5>
+                    </section>
+                </div>
+            </section>
+            <section id='flight-line-3'>
+            </section>
+    
+            <section id="card-4" class="cards-right">
+                <div>
+                    <img src="img/encounters/card4/calculator.svg" alt="calculator" class="card-icon" id="calculator">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 328</h1>
+                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <section>
+                        <h5>the businessman</h5>
+                    </section>
+                    <aside>
+                        <img src="img/encounters/card4/businessman.jpg" alt="the businessman on asteroid 328" id="businessman-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
+                </div>
+            </section>
+            <section id='flight-line-4'>
+            </section>
+    
+            <section id="card-5" class="cards-left">
+                <div>
+                    <img src="img/encounters/card5/lamp.svg" alt="crown" class="card-icon" id="lamp">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 329</h1>
+                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <aside>
+                        <img src="img/encounters/card5/lamplighter.jpg" alt="the lamplighter on asteroid 329" id="lamplighter-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
+                    <section>
+                        <h5>the lamplighter</h5>
+                    </section>
+                </div>
+            </section>
+            <section id='flight-line-5'>
+            </section>
+    
+            <section id="card-6" class="cards-right">
+                <div>
+                    <img src="img/encounters/card6/glass.svg" alt="maginifying glass" class="card-icon" id="glass">
+                    <div id="card-info" class="card-icon">
+                        <img src="img/encounters/card1/planet.svg" alt="planet icon" id="planet">
+                        <h1 id="asteroid-number">asteroid 330</h1>
+                    </div>
+                    <!-- <img src="img/encounters/card1/planet.svg" alt="planet icon" class="card-icon" id="planet"> -->
+                    <section>
+                        <h5>the geographer</h5>
+                    </section>
+                    <aside>
+                        <img src="img/encounters/card6/geographer.jpg" alt="the geographer on asteroid 330" id="geographer-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
+                </div>
+            </section>
+            <section id='flight-line-6'>
+            </section>
+    
+            <!-- <section class="grid-container content-spacing" id="slider">
+                <div>
+                    <section class="my-slider">
+                        <div><img src="img/hindsight/gallery-1.jpg" alt="the little prince with the flower" id="slide1"></div>
+                        <div><img src="img/hindsight/gallery-4.jpg" alt="the little prince with the narrator" id="slide2"></div>
+                        <div><img src="img/hindsight/gallery-3.jpg" alt="the little prince with the fox" id="slide3"></div>
+                    </section>
+                </div>
+            </section> -->
+    
+            <section id="card-7" class="cards-middle">
+                <div>
+                    <h1 id="asteroid-number">earth</h1>
+                    <section>
+                        <h5>the geographer</h5>
+                    </section>
+                    <aside>
+                        <img src="img/encounters/earth/narrator.jpg" alt="the narrator on earth" id="narrator-img">
+                    </aside>
+                </div>
+            </section>
+            <section id='flight-line-7'>
+            </section>
+    
+            <section id="card-8" class="cards-middle">
+                <div>
+                    <h1 id="b612-number">b612</h1>
+                    <img src="img/header/logo.svg" alt="flower icon" class="card-icon" id="rose-planet">
+                    <section>
+                        <h5> the flower</h5>
+                    </section>
+                    <aside>
+                        <img src="img/encounters/b612/rose.jpg" alt="the flower on asteroid b612" id="flower-img">
+                        <!-- <div id="flip">
+                            <img src="img/encounters/card1/flip-arrow.svg" alt="flip arrow" id="flip-arrow">
+                            <p id="flip-to-read">flip to read</p>
+                        </div> -->
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <section id="index-ending-quote" class="grid-container content-spacing">
+        <div id="index-ending-container">
+            <div id="slash">
+                <img src="img/encounters/slash.svg" alt="slash">
+            </div>
+            <div id="index-end-quote">
+                <div id="index-end-mark">
+                    <img src="img/hindsight/quote-mark.svg" alt="quotation mark">
+                </div>
+                <div id="index-end-text">
+                    <h2>and when you are comforted, you will be happy to have known me. you will always be my friend.</h2>
+                </div>
+                <div id="index-end-box"></div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
     <!-- jQuery -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <!-- Greensock -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                <!-- FancyBox -->
-                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                <!-- Tiny Slider -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-                <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-                
-                
-                <script src="js/scripts-min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+        <!-- FancyBox -->
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <!-- Tiny Slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+        
+        
+        <script src="js/scripts-min.js"></script>
     <footer class="grid-container">
-                        <div>
-                            <h1>join our newsletter!</h1>
-                            <form action="https://formspree.io/xnqgoljk" method="POST">
-                                <section>
-                                    <div>
-                                        <input type="text" placeholder="example@abc.com" name="E-mail">
-                                    </div>
-                                    <div>
-                                        <button class="button" type="submit" value="Send">join us</button>
-                                    </div>
-                                </section>
-                            </form>
-                    
-                            <ul>
-                                <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </li>
-                                <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            </ul>
-                        </div>
-                    </footer>
+                <div>
+                    <h1>join our newsletter!</h1>
+                    <form action="https://formspree.io/xnqgoljk" method="POST">
+                        <section>
+                            <div>
+                                <input type="text" placeholder="example@abc.com" name="E-mail">
+                            </div>
+                            <div>
+                                <button class="button" type="submit" value="Send">join us</button>
+                            </div>
+                        </section>
+                    </form>
+            
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
 
 </body>
 

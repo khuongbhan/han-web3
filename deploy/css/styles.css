@@ -458,9 +458,17 @@ textarea {
 /* =============
     Navigation
 ============= */
+.hide-nav-buttons {
+  display: none;
+}
+
+.show-nav-buttons {
+  display: block !important;
+}
+
 #main-nav {
   background-color: #F7E1D8;
-  display: grid;
+  display: none;
   place-items: center;
   position: fixed;
   top: 0;
@@ -501,6 +509,19 @@ textarea {
 #main-nav #nav-container #side-menu #side-1 li {
   text-align: center;
   margin-bottom: 5px;
+}
+#main-nav #nav-container #side-menu #side-1 li button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #4F2E1C;
+  background-color: #F7E1D8;
+  border: none;
+  cursor: pointer;
+}
+#main-nav #nav-container #side-menu #side-1 li button:hover, #main-nav #nav-container #side-menu #side-1 li button:active {
+  color: #AB633D;
+  text-decoration: none;
 }
 #main-nav #nav-container #side-menu #side-1 li a:link,
 #main-nav #nav-container #side-menu #side-1 li a:visited {
