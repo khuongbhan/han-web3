@@ -60,37 +60,37 @@ header {
                 // justify-content: flex-end;
             }
 
-            .bar1,
-            .bar3 {
-                border-radius: 10px;
-                width: 45px;
-                height: 3px;
-                background-color: $h1-brown;
-                margin: 10px 0;
-                transition: 0.4s;
-            }
-            .bar2 {
-                border-radius: 10px;
-                width: 30px;
-                height: 3px;
-                background-color: $h1-brown;
-                margin: 10px 0 10px 15px;
-                transition: 0.4s;
-            }
+            // .bar1,
+            // .bar3 {
+            //     border-radius: 10px;
+            //     width: 45px;
+            //     height: 3px;
+            //     background-color: $h1-brown;
+            //     margin: 10px 0;
+            //     transition: 0.4s;
+            // }
+            // .bar2 {
+            //     border-radius: 10px;
+            //     width: 30px;
+            //     height: 3px;
+            //     background-color: $h1-brown;
+            //     margin: 10px 0 10px 15px;
+            //     transition: 0.4s;
+            // }
 
-            .change .bar1 {
-                -webkit-transform: rotate(-45deg) translate(-13px, 10px);
-                transform: rotate(-45deg) translate(-8px, 10px);
-            }
+            // .change .bar1 {
+            //     -webkit-transform: rotate(-45deg) translate(-13px, 10px);
+            //     transform: rotate(-45deg) translate(-8px, 10px);
+            // }
 
-            .change .bar2 {
-                opacity: 0;
-            }
+            // .change .bar2 {
+            //     opacity: 0;
+            // }
 
-            .change .bar3 {
-                -webkit-transform: rotate(45deg) translate(-12px, -10px);
-                transform: rotate(45deg) translate(-8px, -11px);
-            }
+            // .change .bar3 {
+            //     -webkit-transform: rotate(45deg) translate(-12px, -10px);
+            //     transform: rotate(45deg) translate(-8px, -11px);
+            // }
 		}
 	}
 }
