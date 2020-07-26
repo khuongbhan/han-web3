@@ -479,21 +479,60 @@ textarea {
   height: 100vh;
   z-index: 999;
 }
+@media (min-width: 992px) {
+  #main-nav {
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas: ". nav-content .";
+  }
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container {
+    margin-top: 100px;
+    grid-area: nav-content;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-areas: "image menu" "side side";
+  }
+}
 #main-nav #nav-container #image {
   display: none;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #image {
+    display: grid;
+    grid-area: image;
+  }
 }
 #main-nav #nav-container #main-menu ul {
   margin-top: -30px;
 }
+@media (min-width: 992px) {
+  #main-nav #nav-container #main-menu ul {
+    grid-area: menu;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+}
 #main-nav #nav-container #main-menu ul li {
   text-align: center;
   margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #main-menu ul li {
+    text-align: left;
+  }
 }
 #main-nav #nav-container #main-menu ul li a:link,
 #main-nav #nav-container #main-menu ul li a:visited {
   font-family: "Yeseva One", serif;
   font-size: 2.1875rem;
   color: #4F2E1C;
+}
+@media (min-width: 768px) {
+  #main-nav #nav-container #main-menu ul li a:link,
+#main-nav #nav-container #main-menu ul li a:visited {
+    font-size: 2.8125rem;
+  }
 }
 #main-nav #nav-container #main-menu ul li a:active,
 #main-nav #nav-container #main-menu ul li a:hover {
@@ -503,12 +542,37 @@ textarea {
   border-bottom: 3px #AB633D solid;
   text-decoration: none;
 }
-#main-nav #nav-container #side-menu #side-1 {
+#main-nav #nav-container #side-menu {
+  display: grid;
   margin-top: 30px;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu {
+    margin-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: side;
+  }
+  #main-nav #nav-container #side-menu .menu-title {
+    text-align: left;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.375rem;
+    color: #4F2E1C;
+  }
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-1 {
+    margin-top: 45px;
+  }
 }
 #main-nav #nav-container #side-menu #side-1 li {
   text-align: center;
   margin-bottom: 5px;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-1 li {
+    text-align: left;
+    font-size: 1rem;
+  }
 }
 #main-nav #nav-container #side-menu #side-1 li button {
   font-family: "Roboto Mono", monospace;
@@ -518,6 +582,16 @@ textarea {
   background-color: #F7E1D8;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  #main-nav #nav-container #side-menu #side-1 li button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-1 li button {
+    padding-left: 0;
+  }
 }
 #main-nav #nav-container #side-menu #side-1 li button:hover, #main-nav #nav-container #side-menu #side-1 li button:active {
   color: #AB633D;
@@ -530,16 +604,87 @@ textarea {
   text-align: center;
   color: #4F2E1C;
 }
+@media (min-width: 768px) {
+  #main-nav #nav-container #side-menu #side-1 li a:link,
+#main-nav #nav-container #side-menu #side-1 li a:visited {
+    font-size: 1rem;
+  }
+}
 #main-nav #nav-container #side-menu #side-1 li a:active,
 #main-nav #nav-container #side-menu #side-1 li a:hover {
   color: #AB633D;
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  #main-nav #nav-container #side-menu #side-1 li a:active,
+#main-nav #nav-container #side-menu #side-1 li a:hover {
+    font-size: 1rem;
+  }
+}
 #main-nav #nav-container #side-menu #side-2 {
   display: none;
 }
+#main-nav #nav-container #side-menu #side-2 li a:link,
+#main-nav #nav-container #side-menu #side-2 li a:visited {
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  color: #4F2E1C;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-2 li a:link,
+#main-nav #nav-container #side-menu #side-2 li a:visited {
+    font-size: 1rem;
+  }
+}
+#main-nav #nav-container #side-menu #side-2 li a:active,
+#main-nav #nav-container #side-menu #side-2 li a:hover {
+  color: #AB633D;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-2 li a:active,
+#main-nav #nav-container #side-menu #side-2 li a:hover {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-2 {
+    display: grid;
+  }
+}
 #main-nav #nav-container #side-menu #side-3 {
   display: none;
+}
+#main-nav #nav-container #side-menu #side-3 li a:link,
+#main-nav #nav-container #side-menu #side-3 li a:visited {
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  color: #4F2E1C;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-3 li a:link,
+#main-nav #nav-container #side-menu #side-3 li a:visited {
+    font-size: 1rem;
+  }
+}
+#main-nav #nav-container #side-menu #side-3 li a:active,
+#main-nav #nav-container #side-menu #side-3 li a:hover {
+  color: #AB633D;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-3 li a:active,
+#main-nav #nav-container #side-menu #side-3 li a:hover {
+    font-size: 1rem;
+  }
+}
+#main-nav #nav-container #side-menu #side-3 li:nth-child(2) {
+  margin-top: 10px;
+}
+@media (min-width: 992px) {
+  #main-nav #nav-container #side-menu #side-3 {
+    display: grid;
+  }
 }
 
 .fancybox-button, .fancybox-button:link, .fancybox-button:visited {
@@ -1025,11 +1170,11 @@ header div #burger-container #burger {
   transition: 0.25s;
 }
 header div #burger-container #burger #lines {
-  stroke: #AB633D;
+  stroke: #AB633D !important;
   transition: 0.25s;
 }
 header div #burger-container #burger #lines:hover {
-  stroke: #4F2E1C;
+  stroke: #4F2E1C !important;
 }
 
 /* =============

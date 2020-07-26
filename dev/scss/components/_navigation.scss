@@ -24,23 +24,64 @@
     z-index: 999;
     // padding: 100px 0;
 
+    @include lg {
+        // margin-top: 100px;
+        grid-template-columns: 5% auto 5%;
+        grid-template-areas: ". nav-content .";
+    }
+
     #nav-container {
+        @include lg {
+            margin-top: 100px;
+            grid-area: nav-content;
+
+            display: grid;
+            grid-template-columns: 60% auto;
+            grid-template-areas: "image menu"
+                                 "side side";
+        }
 
         #image {
             display: none;
 
-            // @include xl {
-            //     display: grid;
-            // }
+            @include lg {
+                display: grid;
+                grid-area: image;
+                // width: 100%;
+                // object-fit: cover;
+            }
+
+            img {
+                @include lg {
+                    // width: 100%;
+                    // height: 100%;
+                    // object-fit: cover;
+                }
+            }
         }
 
         #main-menu {
             ul {
                 margin-top: -30px;
 
+                @include lg {
+                    grid-area: menu;
+                    margin-left: 50px;
+                    margin-top: 30px;
+                }
+
                 li {
                     text-align: center;
                     margin-bottom: 10px;
+
+                    // span {
+                    //     display: none;
+                    // }
+
+                    @include lg {
+                        text-align: left;
+                        // margin-left: 50px;
+                    }
 
                     a:link,
                     a:visited {
@@ -49,9 +90,9 @@
                         // line-height: rem-calc(40);
                         color: $dark-brown;
 
-                        // span {
-                        //     display: none;
-                        // }
+                        @include md {
+                            font-size: rem-calc(45);
+                        }
                     }
 
                     a:active,
@@ -60,13 +101,13 @@
                         font-style: italic;
                         color: $h1-brown;
                         border-bottom: 3px $h1-brown solid;
-                        // border-radius: 1px;
                         text-decoration: none;
 
                         // span {
                         //     display: block;
                         //     font-family: 'Roboto Mono', monospace;
-                        //     font-size: rem-calc(12);
+                        //     font-size: rem-calc(16);
+                        //     margin-top: 20px;
                         // }
                     }
                 }
@@ -74,12 +115,39 @@
         }
 
         #side-menu {
+            display: grid;
+            margin-top: 30px;
+            // grid-area: side;
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-areas: "side-1 side-2 side-3";
+
+            @include lg {
+                margin-top: 70px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-area: side;
+                // margin-left: 110px;
+
+                .menu-title {
+                    text-align: left;
+                    font-family: 'Roboto Mono', monospace;
+                    font-size: rem-calc(22);
+                    color: $dark-brown;
+                }
+            }
+
             #side-1 {
-                margin-top: 30px;
+                @include lg {
+                    margin-top: 45px;
+                }
 
                 li {
                     text-align: center;
                     margin-bottom: 5px;
+
+                    @include lg {
+                        text-align: left;
+                        font-size: rem-calc(16);
+                    }
 
                     button {
                         font-family: 'Roboto Mono', monospace;
@@ -89,6 +157,14 @@
                         background-color: $card-pink;
                         border: none;
                         cursor: pointer;
+
+                        @include md {
+                            font-size: rem-calc(16);
+                        }
+
+                        @include lg {
+                            padding-left: 0;
+                        }
 
                         &:hover,
                         &:active {
@@ -103,12 +179,20 @@
                         font-size: rem-calc(12);
                         text-align: center;
                         color: $dark-brown;
+
+                        @include md {
+                            font-size: rem-calc(16);
+                        }
                     }
 
                     a:active,
                     a:hover {
                         color: $h1-brown;
                         text-decoration: none;
+
+                        @include md {
+                            font-size: rem-calc(16);
+                        }
                     }
                 }
 
@@ -117,17 +201,71 @@
             #side-2 {
                 display: none;
 
-                // @include lg {
-                //     display: grid;
-                // }
+                li {
+                    a:link,
+                    a:visited {
+                        font-family: 'Roboto Mono', monospace;
+                        // font-size: rem-calc(12);
+                        text-align: left;
+                        color: $dark-brown;
+
+                        @include lg {
+                            font-size: rem-calc(16);
+                        }
+                    }
+
+                    a:active,
+                    a:hover {
+                        color: $h1-brown;
+                        text-decoration: none;
+
+                        @include lg {
+                            font-size: rem-calc(16);
+                        }
+                    }
+                }
+
+                @include lg {
+                    display: grid;
+                    // margin-top: 30px;
+                }
             }
 
             #side-3 {
                 display: none;
 
-                // @include lg {
-                //     display: grid;
-                // }
+                li {
+
+                    a:link,
+                    a:visited {
+                        font-family: 'Roboto Mono', monospace;
+                        text-align: left;
+                        color: $dark-brown;
+
+                        @include lg {
+                            font-size: rem-calc(16);
+                        }
+                    }
+
+                    a:active,
+                    a:hover {
+                        color: $h1-brown;
+                        text-decoration: none;
+
+                        @include lg {
+                            font-size: rem-calc(16);
+                        }
+                    }
+                }
+
+                li:nth-child(2) {
+                    margin-top: 10px;
+                }
+
+
+                @include lg {
+                    display: grid;
+                }
             }
         }
     }

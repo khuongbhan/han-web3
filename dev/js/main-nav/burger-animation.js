@@ -7,7 +7,7 @@ gsap.set(".line",{transformOrigin:"center"});
 // 1. first is the ref to the timeline, 2: what do you want to animate?, 3: what properties?
 burgerAnimationTimeLine.to("#middle-line",{duration:burgerAnimationSpeed,alpha:0,stroke:'#4F2E1C'},"burgerStart")
                        .to("#top-line",{duration:burgerAnimationSpeed,rotation:45, y:14, stroke:'#4F2E1C'},"burgerStart")
-                       .to("#bottom-line",{duration:burgerAnimationSpeed,rotation:-45, y:-14,stroke:'#4F2E1C'},"burgerStart");
+                       .to("#bottom-line",{duration:burgerAnimationSpeed,rotation:-45, y:-14,stroke:'#4F2E1C', onReverseComplete:resetBurgerLines},"burgerStart");
 
 function animateBurger(){
     console.log("animate burger");
@@ -17,5 +17,10 @@ function animateBurger(){
     } else {
         burgerAnimationTimeLine.reverse();
     }
+}
+
+// function to change burger color
+function resetBurgerLines(){
+    gsap.to(".line",{duration:0.25, stroke:"#AB633D"});
 }
 

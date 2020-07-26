@@ -57,11 +57,11 @@ header {
 				transition: 0.25s;
 
 				#lines {
-					stroke: $h1-brown;
+					stroke: $h1-brown !important;
 					transition: 0.25s;
 
 					&:hover {
-						stroke: $dark-brown;
+						stroke: $dark-brown !important;
 					}
 				}
 
