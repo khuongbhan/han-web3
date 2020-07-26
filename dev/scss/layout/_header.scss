@@ -47,50 +47,26 @@ header {
 		#burger-container {
 			align-items: center;
 			// border: 1px $h1-brown solid;
-			color: $h1-brown;
+			// color: $h1-brown;
 			display: flex;
-			font-size: rem-calc(30);
-            justify-content: flex-end;
-            
-            .container {
-                display: inline-block;
-                cursor: pointer;
-                // display: flex;
-                // align-items: center;
-                // justify-content: flex-end;
-            }
+			// font-size: rem-calc(30);
+			justify-content: flex-end;
+			
+			#burger {
+				cursor: pointer;
+				transition: 0.25s;
 
-            // .bar1,
-            // .bar3 {
-            //     border-radius: 10px;
-            //     width: 45px;
-            //     height: 3px;
-            //     background-color: $h1-brown;
-            //     margin: 10px 0;
-            //     transition: 0.4s;
-            // }
-            // .bar2 {
-            //     border-radius: 10px;
-            //     width: 30px;
-            //     height: 3px;
-            //     background-color: $h1-brown;
-            //     margin: 10px 0 10px 15px;
-            //     transition: 0.4s;
-            // }
+				#lines {
+					stroke: $h1-brown;
+					transition: 0.25s;
 
-            // .change .bar1 {
-            //     -webkit-transform: rotate(-45deg) translate(-13px, 10px);
-            //     transform: rotate(-45deg) translate(-8px, 10px);
-            // }
+					&:hover {
+						stroke: $dark-brown;
+					}
+				}
 
-            // .change .bar2 {
-            //     opacity: 0;
-            // }
+			}
 
-            // .change .bar3 {
-            //     -webkit-transform: rotate(45deg) translate(-12px, -10px);
-            //     transform: rotate(45deg) translate(-8px, -11px);
-            // }
 		}
 	}
 }

@@ -11,9 +11,8 @@
 }
 
 #main-nav {
-    // background-color: $card-pink;
     background-color: $card-pink;
-    display: none;
+    display: grid;
     place-items: center;
     position: fixed;
     top: 0;
@@ -23,22 +22,16 @@
     width: 100%;
     height: 100vh;
     z-index: 999;
+    // padding: 100px 0;
 
     #nav-container {
-        // background-color: $card-pink;
-        // display: grid;
-        // place-items: center;
-        // position: fixed;
-        // top: 0;
-        // bottom: 0;
-        // left: 0;
-        // right: 0;
-        // width: 100%;
-        // height: 100vh;
-        // z-index: 999;
 
         #image {
             display: none;
+
+            // @include xl {
+            //     display: grid;
+            // }
         }
 
         #main-menu {
@@ -123,10 +116,18 @@
 
             #side-2 {
                 display: none;
+
+                // @include lg {
+                //     display: grid;
+                // }
             }
 
             #side-3 {
                 display: none;
+
+                // @include lg {
+                //     display: grid;
+                // }
             }
         }
     }

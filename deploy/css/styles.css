@@ -468,7 +468,7 @@ textarea {
 
 #main-nav {
   background-color: #F7E1D8;
-  display: none;
+  display: grid;
   place-items: center;
   position: fixed;
   top: 0;
@@ -1017,14 +1017,19 @@ header div #title-container {
 }
 header div #burger-container {
   align-items: center;
-  color: #AB633D;
   display: flex;
-  font-size: 1.875rem;
   justify-content: flex-end;
 }
-header div #burger-container .container {
-  display: inline-block;
+header div #burger-container #burger {
   cursor: pointer;
+  transition: 0.25s;
+}
+header div #burger-container #burger #lines {
+  stroke: #AB633D;
+  transition: 0.25s;
+}
+header div #burger-container #burger #lines:hover {
+  stroke: #4F2E1C;
 }
 
 /* =============

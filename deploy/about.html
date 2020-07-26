@@ -36,99 +36,138 @@
             </section>
     
             <section id="burger-container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="62px" height="39px" viewBox="0 0 62 39">
+                <svg xmlns="http://www.w3.org/2000/svg" width="62px" height="39px" viewBox="0 0 62 39" id="burger">
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                        <g id="burger" stroke="#AB633D" stroke-width="2.25">
-                            <path id="top-line" d="M53 6.5H9" />
-                            <path id="middle-line" d="M53 20.5H23" />
-                            <path id="bottom-line" d="M53 35H9" />
+                        <g id="lines" stroke="#AB633D" stroke-width="3.5">
+                            <path id="top-line" d="M53 6.5H9" class="line" />
+                            <path id="middle-line" d="M53 20.5H23" class="line" />
+                            <path id="bottom-line" d="M53 35H9" class="line" />
                         </g>
                     </g>
                 </svg>
             </section>
         </div>
     </header>
-    <section id="about-container" class="grid-container content-spacing">
-            <div id="banner-container">
-                <div id="section-title">
-                    <div id="title">
-                        <h1>about</h1>
-                        <div id="slash">
-                            <img src="img/encounters/slash.svg" alt="slash">
-                        </div>
+    <nav id="main-nav">
+                <div id="nav-container">
+                    <div id="image">
+                        <img src="img/encounters/b612/rose.jpg" alt="the little prince wit the rose">
                     </div>
-                </div>
-                <div id="quote">
-                    <div id="text">
-                        <h2>ANTOINE DE<br>SAINT-EXUPÉRY</h2>
+                    <div id="main-menu">
+                        <ul>
+                            <li><a href="index.html">encounters</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="hindsight.html">hindsight</a></li>
+                            <li><a href="wonders.html">wonders</a></li>
+                            <li><a href="friends.html">friends</a></li>
+                        </ul>
                     </div>
-                    <div id="box"></div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="introductions-container" class="content-spacing grid-container">
-            <div id="introductions">
-                <div id="paragraphs">
-                    <p id="para-1">
-                        When you read this book, were you surprised to find out that it was narrated by an adult? We were! To be
-                        completely honest, the book’s wonderful illustrations had grabbed our attention, and we were mildly
-                        disappointed that an adult narrator had wandered into its pages.
-                    </p>
-                    <p id="para-2">
-                        We shouldn’t have worried, though, because even though the narrator is a grown up, he’s a child at
-                        heart. And though he tells the story, the star of this tale is the little prince.
-                    </p>
-                    <div id="box-2"></div>
-                </div>
-                <div id="visit-button">
-                    <button class="button" onclick="window.location.href='hindsight.html';" target="_blank">visit gallery</button>
-                    <!-- <a href="http://khgbhaan.com/lepetitprince/hindsight.html" class="button" target="_blank">visit the website</a> -->
-                </div>
-            </div>
-        </section>
-        
-        <section class="grid-container content-spacing" id="slider">
-            <div>
-                <section class="my-slider slides">
-                    <div><img src="img/about/slider/slide1.jpg" alt="the little prince with the sprout" id="slide1"></div>
-                    <div><img src="img/about/slider/slide2.jpg" alt="the little prince with the flower" id="slide2"></div>
-                    <div><img src="img/about/slider/slide3.jpg" alt="the little prince with the fox" id="slide3"></div>
-                    <div><img src="img/about/slider/slide4.jpg" alt="the little prince with the fox near the baobap" id="slide4"></div>
-                    <div><img src="img/about/slider/slide5.jpg" alt="the little prince with the fox in the garden of roses" id="slide5"></div>
-                </section>
-            </div>
-        </section>
-        
-        <section id="about-location" class="grid-container content-spacing">
-            <div>
-                <h1>where he met the little prince</h1>
-                <div id="map"></div>
-            </div>
-        </section>
-    <footer class="grid-container">
-                <div>
-                    <h1>join our newsletter!</h1>
-                    <form action="https://formspree.io/xnqgoljk" method="POST">
-                        <section>
-                            <div>
-                                <input type="text" placeholder="example@abc.com" name="E-mail">
-                            </div>
-                            <div>
-                                <button class="button" type="submit" value="Send">join us</button>
-                            </div>
-                        </section>
-                    </form>
+                    <div id="side-menu">
+                        <ul id="side-1">
+                            <!-- <li><a href="#">terms & conditions</a></li> -->
+                            <li class="show-nav-buttons hide-nav-buttons"><button>terms & conditions</button></li>
             
-                    <ul>
-                        <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
-                        <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    </ul>
+                            <li class=" hide-nav-buttons"><a href="#">terms & conditions</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">customer service</a></li>
+                        </ul>
+                        <ul id="side-2">
+                            <li>language</li>
+                            <li><a href="#">english</a></li>
+                            <li><a href="#">vietnamese</a></li>
+                        </ul>
+                        <ul id="side-3">
+                            <li>social</li>
+                            <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank">youtube</a></li>
+                            <li><a href="https://www.instagram.com/december13.2000/" target="_blank">instagram</a></li>
+                            <li><a href="https://www.behance.net/khuongbhan" target="_blank">behance</a></li>
+                            <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank">facebook</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </footer>
+            </nav>
+
+    <section id="about-container" class="grid-container content-spacing">
+        <div id="banner-container">
+            <div id="section-title">
+                <div id="title">
+                    <h1>about</h1>
+                    <div id="slash">
+                        <img src="img/encounters/slash.svg" alt="slash">
+                    </div>
+                </div>
+            </div>
+            <div id="quote">
+                <div id="text">
+                    <h2>ANTOINE DE<br>SAINT-EXUPÉRY</h2>
+                </div>
+                <div id="box"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="introductions-container" class="content-spacing grid-container">
+        <div id="introductions">
+            <div id="paragraphs">
+                <p id="para-1">
+                    When you read this book, were you surprised to find out that it was narrated by an adult? We were! To be
+                    completely honest, the book’s wonderful illustrations had grabbed our attention, and we were mildly
+                    disappointed that an adult narrator had wandered into its pages.
+                </p>
+                <p id="para-2">
+                    We shouldn’t have worried, though, because even though the narrator is a grown up, he’s a child at
+                    heart. And though he tells the story, the star of this tale is the little prince.
+                </p>
+                <div id="box-2"></div>
+            </div>
+            <div id="visit-button">
+                <button class="button" onclick="window.location.href='hindsight.html';" target="_blank">visit gallery</button>
+                <!-- <a href="http://khgbhaan.com/lepetitprince/hindsight.html" class="button" target="_blank">visit the website</a> -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="grid-container content-spacing" id="slider">
+        <div>
+            <section class="my-slider slides">
+                <div><img src="img/about/slider/slide1.jpg" alt="the little prince with the sprout" id="slide1"></div>
+                <div><img src="img/about/slider/slide2.jpg" alt="the little prince with the flower" id="slide2"></div>
+                <div><img src="img/about/slider/slide3.jpg" alt="the little prince with the fox" id="slide3"></div>
+                <div><img src="img/about/slider/slide4.jpg" alt="the little prince with the fox near the baobap" id="slide4"></div>
+                <div><img src="img/about/slider/slide5.jpg" alt="the little prince with the fox in the garden of roses" id="slide5"></div>
+            </section>
+        </div>
+    </section>
+    
+    <section id="about-location" class="grid-container content-spacing">
+        <div>
+            <h1>where he met the little prince</h1>
+            <div id="map"></div>
+        </div>
+    </section>
+    <footer class="grid-container">
+            <div>
+                <h1>join our newsletter!</h1>
+                <form action="https://formspree.io/xnqgoljk" method="POST">
+                    <section>
+                        <div>
+                            <input type="text" placeholder="example@abc.com" name="E-mail">
+                        </div>
+                        <div>
+                            <button class="button" type="submit" value="Send">join us</button>
+                        </div>
+                    </section>
+                </form>
+        
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=APG1upS8LDw" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/december13.2000/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.behance.net/khuongbhan" target="_blank"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="https://www.facebook.com/thelittleprinceofficial/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 
     <script>
         function initMap() {
@@ -397,7 +436,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
     <!-- FancyBox -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- Tiny Slider -->
