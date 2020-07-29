@@ -2,62 +2,80 @@ var burgerToDownArrowTimeLine = gsap.timeline({paused:true});
 var burgerArrowSpeed = 0.25;
 var arrowShowUp = 0.1;
 
-burgerToDownArrowTimeLine.to("#burger",{duration:0.25,rotation:-90}, "animateBurger")
+burgerToDownArrowTimeLine.to("#burger",{duration:burgerArrowSpeed,rotation:-90}, "animateBurger")
                     .to("#bottom-line",{duration:burgerArrowSpeed,y:-14},"animateBurger")
                     .to("#top-line",{duration:burgerArrowSpeed,y:14},"animateBurger")
-                    .to("#arrow-left",{duration:arrowShowUp, rotation:45, alpha:1, stroke:"#51787A"},"arrowOut")
-                    .to("#arrow-right",{duration:arrowShowUp, rotation:-45, alpha:1, stroke:"#51787A"},"arrowOut")
+                    .to("#arrow-left",{duration:arrowShowUp, rotation:45, stroke:"#AB633D"},"arrowOut")
+                    .to("#arrow-right",{duration:arrowShowUp, rotation:-45, stroke:"#AB633D"},"arrowOut")
 
 
-$("#burger").on("mouseenter",function(){
-    console.log("mouse enter");
-    burgerToDownArrowTimeLine.play();
-})
-
-$("#burger").on("mouseleave",function(){
-    console.log("mouse leave");
-    burgerToDownArrowTimeLine.reverse();
-})
-
-var downArrowToXTimeLine = gsap.timeline({paused:true});
-
-// // reset the transformOrigin for each line
-// gsap.set(".line",{transformOrigin:"center"});
-downArrowToXTimeLine.to("#burger",{duration:0.25,rotation:-90}, "downToX")
-                    .to("#bottom-line",{duration:burgerArrowSpeed,rotation:45},"downToX")
-                    .to("#top-line",{duration:burgerArrowSpeed, rotation:45},"downToX")
-                    .to("#arrow-left",{duration:arrowShowUp, alpha:0, stroke:"#none"},"arrowGone")
-                    .to("#arrow-right",{duration:arrowShowUp, alpha:0, stroke:"#none"},"arrowGone")
-
-                    
 // $("#burger").on("mouseenter",function(){
 //     console.log("mouse enter");
 //     burgerToDownArrowTimeLine.play();
 // })
 
-function burgerHover(){
-    console.log("please show up if it's on hover");
+// $("#burger").on("mouseleave",function(){
+//     console.log("mouse leave");
+//     burgerToDownArrowTimeLine.reverse();
+// })
 
-    if(canYouSeeTheMenu === true) {
-        $("#burger").on("mouseleave",function(){
-            console.log("mouse leave when menu is down");
-            downArrowToXTimeLine.play();
-        })
+// to("#burger",{duration:burgerArrowSpeed,rotation:-270}, "xToUp")
+
+var xToUpArrowTimeLine = gsap.timeline({paused:true});
+
+// xToUpArrowTimeLine.to("#bottom-line",{duration:burgerArrowSpeed,rotation:180, y:-14},"xToUp")
+//                   .to("#top-line",{duration:burgerArrowSpeed, rotation:180, y:14},"xToUp")
+//                   .to("#arrow-left",{duration:burgerArrowSpeed, alpha:1, rotation:45, stroke:"#AB633D"},"arrowUp")
+//                   .to("#arrow-right",{duration:burgerArrowSpeed, alpha:1, rotation:-45, stroke:"#AB633D"},"arrowUp")
+//                   .to("#burger",{duration:burgerArrowSpeed,rotation:-270}, "xToUp")
+
+xToUpArrowTimeLine.to("#bottom-line",{duration:burgerArrowSpeed,rotation:0, y:-14},"xToUp")
+                  .to("#top-line",{duration:burgerArrowSpeed, rotation:0, y:14},"xToUp")
+                  .to("#arrow-left",{duration:burgerArrowSpeed, alpha:1, rotation:45, stroke:"#AB633D"},"arrowUp")
+                  .to("#arrow-right",{duration:burgerArrowSpeed, alpha:1, rotation:-45, stroke:"#AB633D"},"arrowUp")
+                  .to("#burger",{duration:burgerArrowSpeed,rotation:-270}, "xToUp")
+
+    
+           
+
+$("#burger").on("mouseenter",function(){
+    console.log("mouse enter");
+    if(canYouSeeTheMenu === false){
+        burgerToDownArrowTimeLine.play();
+
     } else {
-        console.log("not on hover");
+        xToUpArrowTimeLine.play();
     }
+});
 
-}
+$("#burger").on("mouseleave",function(){
+    console.log("mouse leave");
+
+    if(canYouSeeTheMenu === false){
+        burgerToDownArrowTimeLine.reverse();
+    } else {
+        xToUpArrowTimeLine.reverse();
+    }
+});
+
+
+// $("#burger").on("mouseenter",function(){
+//     console.log("mouse enter");
+//     burgerToDownArrowTimeLine.play();
+// })
+
 // function burgerHover(){
+//     console.log("please show up if it's on hover");
 
-//     console.log("burger hover");
+//     // can
 
-//     if (canYouSeeTheMenu === false) {
-//         $("#burger").on("mouseenter",function(){
-//             console.log("mouse enter");
-//             burgerToDownArrowTimeLine.play();
+//     if(canYouSeeTheMenu === true) {
+//         $("#burger").on("mouseleave",function(){
+//             console.log("mouse leave when menu is down");
+//             downArrowToXTimeLine.play();
 //         })
 //     } else {
-//         // burgerAnimationTimeLine.reverse();
+//         console.log("not on hover");
 //     }
+
 // }

@@ -1173,9 +1173,6 @@ header div #burger-container #burger #lines {
   stroke: #AB633D !important;
   transition: 0.25s;
 }
-header div #burger-container #burger #lines:hover {
-  stroke: #4F2E1C !important;
-}
 
 /* =============
     Footer

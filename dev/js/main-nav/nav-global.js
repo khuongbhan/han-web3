@@ -26,7 +26,7 @@ function hideShowMainNav() {
         //play the main nav into view: pull it down
         mainNavTimeLine.play();
 
-        burgerHover();
+        // burgerHover();
 
 
     } else {
