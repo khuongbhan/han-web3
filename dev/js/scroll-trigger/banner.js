@@ -79,9 +79,9 @@ bannerIndexTimeLine.play();
 
 var endingIndexTimeLine = gsap.timeline();
 
-endingIndexTimeLine.from("#index-ending-container #slash",{duration: slow, alpha: 0, yPercent: 50}, "endingslash")
-                   .from("#index-end-text",{duration: slow, alpha: 0, yPercent: 100, xPercent: 100}, "endingtext")
+endingIndexTimeLine.from("#index-end-text",{duration: slow, alpha: 0, yPercent: 100, xPercent: 100}, "endingtext")
                    .from("#index-end-mark",{duration: slow, alpha: 0, yPercent: -100, xPercent: -100}, "endingtext")
+                   .from("#index-ending-container #slash",{duration: slow, alpha: 0, yPercent: 50}, "endingslash")
 
 
 ScrollTrigger.create({
