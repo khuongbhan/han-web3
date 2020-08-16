@@ -411,6 +411,7 @@
             // background-position: -100px 500px;
             background-position: 50px;
             padding-bottom: 70px;
+            z-index: -10000;
 
             @include md {
                 height: 150px;

@@ -1684,6 +1684,7 @@ footer > div ul li a:visited:active {
   overflow: hidden;
   background-position: 50px;
   padding-bottom: 70px;
+  z-index: -10000;
 }
 @media (min-width: 768px) {
   .card-grid > div #flight-line-1 {
