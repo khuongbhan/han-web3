@@ -2230,47 +2230,47 @@ footer > div ul li a:visited:active {
   }
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container {
+  #hindsight #hindsight-banner-container {
     grid-area: container;
   }
 }
-#hindsight #banner-container #top-info #title {
+#hindsight #hindsight-banner-container #hindsight-top-info #hindsight-title {
   color: #AB633D;
   font-size: 1.5625rem;
   text-align: center;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #top-info #title {
+  #hindsight #hindsight-banner-container #hindsight-top-info #hindsight-title {
     font-size: 1.875rem;
     text-align: left;
     padding-bottom: 5px;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #top-info #title {
+  #hindsight #hindsight-banner-container #hindsight-top-info #hindsight-title {
     font-size: 3.125rem;
   }
 }
-#hindsight #banner-container #top-info #slash img {
+#hindsight #hindsight-banner-container #hindsight-top-info #hindsight-slash img {
   width: 65px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #top-info #slash img {
+  #hindsight #hindsight-banner-container #hindsight-top-info #hindsight-slash img {
     width: 80px;
     margin-left: 200px;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #top-info #slash img {
+  #hindsight #hindsight-banner-container #hindsight-top-info #hindsight-slash img {
     width: 135px;
     margin-left: 350px;
   }
 }
-#hindsight #banner-container #quote {
+#hindsight #hindsight-banner-container #hindsight-quote {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -2278,78 +2278,78 @@ footer > div ul li a:visited:active {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote {
+  #hindsight #hindsight-banner-container #hindsight-quote {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(7, 1fr);
     column-gap: 10px;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote {
+  #hindsight #hindsight-banner-container #hindsight-quote {
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
   }
 }
-#hindsight #banner-container #quote #planet {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet {
   grid-column: 1/span 2;
   grid-row: 1/span 2;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #planet {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet {
     grid-column: 2/span 4;
     grid-row: 1/span 4;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #planet {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet {
     grid-column: 1/span 4;
     grid-row: 1/span 3;
   }
 }
-#hindsight #banner-container #quote #planet img {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet img {
   height: 100px;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #planet img {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet img {
     height: 200px;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #planet img {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-planet img {
     height: 240px;
   }
 }
-#hindsight #banner-container #quote #mark {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark {
   grid-column: 5/span 1;
   grid-row: 4/span 1;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #mark {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark {
     grid-column: 8/span 2;
     grid-row: 6/span 2;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #mark {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark {
     grid-column: 7/span 2;
     grid-row: 5/span 2;
   }
 }
-#hindsight #banner-container #quote #mark img {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark img {
   height: 60px;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #mark img {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark img {
     height: 100px;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #mark img {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-mark img {
     height: 150px;
   }
 }
-#hindsight #banner-container #quote #text {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-text {
   color: #51787A;
   grid-column: 2/span 5;
   grid-row: 2/span 3;
@@ -2357,24 +2357,24 @@ footer > div ul li a:visited:active {
   z-index: 50;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #text {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-text {
     grid-column: 3/span 7;
     grid-row: 3/span 4;
   }
-  #hindsight #banner-container #quote #text h2 {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-text h2 {
     font-size: 1.875rem;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #text {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-text {
     grid-column: 3/span 7;
     grid-row: 2/span 4;
   }
-  #hindsight #banner-container #quote #text h2 {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-text h2 {
     font-size: 3.125rem;
   }
 }
-#hindsight #banner-container #quote #box {
+#hindsight #hindsight-banner-container #hindsight-quote #hindsight-box {
   background-color: #F7E1D8;
   grid-column: 1/span 3;
   grid-row: 2/span 2;
@@ -2383,32 +2383,32 @@ footer > div ul li a:visited:active {
   z-index: -10;
 }
 @media (min-width: 768px) {
-  #hindsight #banner-container #quote #box {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-box {
     grid-column: 1/span 5;
     grid-row: 4/span 4;
   }
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #quote #box {
+  #hindsight #hindsight-banner-container #hindsight-quote #hindsight-box {
     grid-column: 1/span 8;
     grid-row: 4/span 2;
   }
 }
-#hindsight #banner-container #scroll {
+#hindsight #hindsight-banner-container #hindsight-scroll {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 @media (min-width: 992px) {
-  #hindsight #banner-container #scroll {
+  #hindsight #hindsight-banner-container #hindsight-scroll {
     padding-top: 0;
   }
 }
-#hindsight #banner-container #scroll p,
-#hindsight #banner-container #scroll a {
+#hindsight #hindsight-banner-container #hindsight-scroll p,
+#hindsight #hindsight-banner-container #hindsight-scroll a {
   margin: 0 10px;
 }
-#hindsight #banner-container #scroll p {
+#hindsight #hindsight-banner-container #hindsight-scroll p {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
   color: #DBA68A;
@@ -2694,29 +2694,29 @@ footer > div ul li a:visited:active {
   }
 }
 @media (min-width: 768px) {
-  #friends-container #banner-container {
+  #friends-container #friends-banner-container {
     grid-area: container;
   }
 }
-#friends-container #banner-container #section-title {
+#friends-container #friends-banner-container #friends-section-title {
   color: #AB633D;
   font-size: 1.5625rem;
   text-align: center;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #friends-container #banner-container #section-title {
+  #friends-container #friends-banner-container #friends-section-title {
     font-size: 1.875rem;
     text-align: left;
     padding-bottom: 5px;
   }
 }
 @media (min-width: 992px) {
-  #friends-container #banner-container #section-title {
+  #friends-container #friends-banner-container #friends-section-title {
     font-size: 3.125rem;
   }
 }
-#friends-container #banner-container #slash img {
+#friends-container #friends-banner-container #friends-slash img {
   width: 65px;
   display: block;
   margin-right: auto;
@@ -2724,38 +2724,38 @@ footer > div ul li a:visited:active {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #friends-container #banner-container #slash img {
+  #friends-container #friends-banner-container #friends-slash img {
     width: 80px;
     margin-left: 150px;
   }
 }
 @media (min-width: 992px) {
-  #friends-container #banner-container #slash img {
+  #friends-container #friends-banner-container #friends-slash img {
     width: 135px;
     margin-left: 230px;
   }
 }
-#friends-container #banner-container #quote #text {
+#friends-container #friends-banner-container #friends-quote #friends-text {
   color: #51787A;
   text-align: center;
 }
 @media (min-width: 768px) {
-  #friends-container #banner-container #quote #text {
+  #friends-container #friends-banner-container #friends-quote #friends-text {
     margin-left: -250px;
   }
 }
 @media (min-width: 992px) {
-  #friends-container #banner-container #quote #text {
+  #friends-container #friends-banner-container #friends-quote #friends-text {
     margin-left: -450px;
   }
 }
 @media (min-width: 768px) {
-  #friends-container #banner-container #quote #text h2 {
+  #friends-container #friends-banner-container #friends-quote #friends-text h2 {
     font-size: 1.5625rem;
   }
 }
 @media (min-width: 992px) {
-  #friends-container #banner-container #quote #text h2 {
+  #friends-container #friends-banner-container #friends-quote #friends-text h2 {
     font-size: 3.125rem;
   }
 }
@@ -2780,28 +2780,28 @@ footer > div ul li a:visited:active {
     margin-top: 100px;
   }
 }
-#wonders-container #banner-container {
+#wonders-container #wonders-banner-container {
   grid-area: container;
 }
-#wonders-container #banner-container #section-title {
+#wonders-container #wonders-banner-container #wonders-section-title {
   color: #AB633D;
   font-size: 1.5625rem;
   text-align: center;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #wonders-container #banner-container #section-title {
+  #wonders-container #wonders-banner-container #wonders-section-title {
     font-size: 1.875rem;
     text-align: left;
     padding-bottom: 5px;
   }
 }
 @media (min-width: 992px) {
-  #wonders-container #banner-container #section-title {
+  #wonders-container #wonders-banner-container #wonders-section-title {
     font-size: 3.125rem;
   }
 }
-#wonders-container #banner-container #slash img {
+#wonders-container #wonders-banner-container #wonders-slash img {
   width: 65px;
   display: block;
   margin-right: auto;
@@ -2810,53 +2810,53 @@ footer > div ul li a:visited:active {
   padding-top: 10px;
 }
 @media (min-width: 768px) {
-  #wonders-container #banner-container #slash img {
+  #wonders-container #wonders-banner-container #wonders-slash img {
     width: 80px;
     margin-left: 200px;
   }
 }
 @media (min-width: 992px) {
-  #wonders-container #banner-container #slash img {
+  #wonders-container #wonders-banner-container #wonders-slash img {
     width: 135px;
     margin-left: 300px;
   }
 }
 @media (min-width: 768px) {
-  #wonders-container #banner-container #quote #text {
+  #wonders-container #wonders-banner-container #wonders-quote #wonders-text {
     margin-top: 10px;
     margin-left: 200px;
     margin-right: 60px;
   }
 }
 @media (min-width: 992px) {
-  #wonders-container #banner-container #quote #text {
+  #wonders-container #wonders-banner-container #wonders-quote #wonders-text {
     margin-top: 30px;
     margin-left: 300px;
     margin-right: 100px;
   }
 }
-#wonders-container #banner-container #quote #text h2 {
+#wonders-container #wonders-banner-container #wonders-quote #wonders-text h2 {
   font-size: 1.875rem;
   color: #51787A;
   text-align: center;
 }
 @media (min-width: 768px) {
-  #wonders-container #banner-container #quote #text h2 {
+  #wonders-container #wonders-banner-container #wonders-quote #wonders-text h2 {
     font-size: 2.5rem;
     text-align: left;
   }
 }
 @media (min-width: 992px) {
-  #wonders-container #banner-container #quote #text h2 {
+  #wonders-container #wonders-banner-container #wonders-quote #wonders-text h2 {
     font-size: 3.75rem;
   }
 }
-#wonders-container #banner-container #quote #box {
+#wonders-container #wonders-banner-container #wonders-box {
   background-color: #F7E1D8;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  #wonders-container #banner-container #quote #box {
+  #wonders-container #wonders-banner-container #wonders-box {
     padding-top: 250px;
     padding-bottom: 150px;
     margin-left: 400px;
@@ -2864,7 +2864,7 @@ footer > div ul li a:visited:active {
   }
 }
 @media (min-width: 992px) {
-  #wonders-container #banner-container #quote #box {
+  #wonders-container #wonders-banner-container #wonders-box {
     padding: 150px;
     margin-left: 400px;
     margin-top: -200px;

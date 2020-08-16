@@ -15,12 +15,12 @@
         margin-top: 100px;
     }
 
-    #banner-container {
+    #friends-banner-container {
         @include md {
             grid-area: container;
         }
 
-        #section-title {
+        #friends-section-title {
             color: $h1-brown;
             font-size: rem-calc(25);
             text-align: center;
@@ -37,7 +37,7 @@
             }
         }
 
-        #slash {
+        #friends-slash {
             img {
                 width: 65px;
                 display: block;
@@ -57,8 +57,8 @@
             }
         }
 
-        #quote {
-            #text {
+        #friends-quote {
+            #friends-text {
                 color: $quote-teal;
                 text-align: center;
 
