@@ -201,7 +201,7 @@ ScrollTrigger.create({
     trigger: "#card-8",
     start: "top 50%",
     // end: "top 60%",
-    markers: true,
+    // markers: true,
     // scrub: 1,
     id: "card8"
 });
