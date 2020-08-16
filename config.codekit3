@@ -644,6 +644,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/js/gsap-register.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/gsap-register-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/main-nav/burger-animation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -707,6 +718,17 @@
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/scroll-trigger/banner.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/scroll-trigger/banner-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -2544,7 +2566,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "tns, gsap",
+	"jsCheckerReservedNamesString": "tns, gsap, ScrollToPlugin, ScrollTrigger",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

@@ -20,10 +20,10 @@
     //     grid-template-areas: ". container .";
     // }
 
-    #banner-container {
+    #about-banner-container {
         grid-area: container;
 
-        #section-title {
+        #about-section-title {
             color: $h1-brown;
             font-size: rem-calc(25);
             text-align: center;
@@ -40,7 +40,7 @@
             }
         }
 
-        #slash {
+        #about-slash {
             img {
                 width: 65px;
                 display: block;
@@ -61,8 +61,9 @@
             }
         }
 
-        #quote {
-            #text {
+        #about-quote {
+            #about-quote-text {
+                z-index: 1000;
                 @include md {
                     margin-top: -70px;
                     margin-left: 220px;
@@ -74,6 +75,7 @@
                 }
 
                 h2 {
+                    z-index: 1000 !important;
                     font-size: rem-calc(30);
                     color: $quote-teal;
                     text-align: center;
@@ -89,11 +91,12 @@
                 }
             }
 
-            #box {
+            #about-box-1 {
                 background-color: $card-pink;
                 // margin-right: -100px;
                 // padding: 40px 40px;
                 overflow: hidden;
+                z-index: -900;
 
                 @include md {
                     padding: 150px;
@@ -111,19 +114,19 @@
     }
 }
 
-#introductions-container {
+#about-introductions-container {
     @include md {
         display: grid;
         grid-template-columns: 10% auto;
         grid-template-areas: ". container";
     }
 
-    #introductions {
+    #about-introductions {
         @include md {
             grid-area: container;
         }
 
-        #paragraphs {
+        #about-paragraphs {
             @include md {
                 margin-left: 40px;
                 display: grid;
@@ -142,20 +145,20 @@
                 color: $dark-brown;
             }
 
-            #para-1 {
+            #about-para-1 {
                 @include md {
                     grid-area: p1;
                 }
             }
 
-            #para-2 {
+            #about-para-2 {
                 @include md {
                     grid-area: p2;
                 }
             }
         }
 
-        #box-2 {
+        #about-box-2 {
             overflow: hidden;
             background-color: $card-pink;
             z-index: -100;
@@ -175,7 +178,7 @@
             }
         }
 
-        #visit-button {
+        #about-visit-button {
             // width: 100%;
             // display: block;
             padding-top: 20px;
