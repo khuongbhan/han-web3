@@ -40,6 +40,25 @@ ScrollTrigger.create({
 
 
 /* ========================
+    About Ending
+======================== */
+
+var locationAboutTimeLine = gsap.timeline();
+
+locationAboutTimeLine.from("#location-title", {duration: slow, alpha: 0, yPercent: -50})
+
+ScrollTrigger.create({
+    animation: locationAboutTimeLine,
+    toggleActions: "play none none none",
+    trigger: "#location-title",
+    start: "bottom 50%",
+    // end: "top 60%",
+    // markers: true,
+    // scrub: 1,
+    id: "map-title"
+});
+
+/* ========================
     Encounters Banner
 ======================== */
 
@@ -53,6 +72,28 @@ bannerIndexTimeLine.from("#index-title", {duration: pageLoads, alpha:0, yPercent
 
 
 bannerIndexTimeLine.play();
+
+/* ========================
+    Encounters Ending
+======================== */
+
+var endingIndexTimeLine = gsap.timeline();
+
+endingIndexTimeLine.from("#index-ending-container #slash",{duration: slow, alpha: 0, yPercent: 50}, "endingslash")
+                   .from("#index-end-text",{duration: slow, alpha: 0, yPercent: 100, xPercent: 100}, "endingtext")
+                   .from("#index-end-mark",{duration: slow, alpha: 0, yPercent: -100, xPercent: -100}, "endingtext")
+
+
+ScrollTrigger.create({
+    animation: endingIndexTimeLine,
+    toggleActions: "play none none none",
+    trigger: "#index-ending-container",
+    start: "top 50%",
+    // end: "top 60%",
+    // markers: true,
+    // scrub: 1,
+    id: "index-end"
+});
 
 /* ========================
     Hindsight Banner
@@ -84,6 +125,29 @@ ScrollTrigger.create({
     id: "hindsight-intro"
 });
 
+
+/* ========================
+    Hindsight Ending
+======================== */
+
+var endingHindsightTimeLine = gsap.timeline();
+
+
+endingHindsightTimeLine.from("#ending-container #slash",{duration: pageLoads, alpha: 0, yPercent: 50}, "endinghstext")
+                       .from("#end-text",{duration: pageLoads, alpha: 0, yPercent: 100, xPercent: 100}, "endinghstext")
+                       .from("#end-mark",{duration: pageLoads, alpha: 0, yPercent: -100, xPercent: -100}, "endinghstext")
+
+
+ScrollTrigger.create({
+    animation: endingHindsightTimeLine,
+    toggleActions: "play none none none",
+    trigger: "#ending-container",
+    start: "top 50%",
+    // end: "top 60%",
+    // markers: true,
+    // scrub: 1,
+    id: "index-end"
+});
 
 /* ========================
     Wonders Banner
