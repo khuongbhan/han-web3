@@ -1,6 +1,7 @@
 
 // @codekit-prepend "gsap-register.js";
 // @codekit-prepend "scroll-trigger/banner.js";
+// @codekit-prepend "scroll-trigger/encounters-cards.js";
 
 // @codekit-prepend "fancybox.js";
 // @codekit-prepend "tinyslider.js";
