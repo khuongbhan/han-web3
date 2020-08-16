@@ -45,26 +45,32 @@
 
 gsap.set("#up-arrow-left",{transformOrigin:"right center", alpha:0});
 gsap.set("#up-arrow-right",{transformOrigin:"right center", alpha:0});
+// gsap.set("#bottom-line",{transformOrigin:"center"});
+// gsap.set("#top-line",{transformOrigin:"center"});
 
 
 
 $("#burger").on("mouseenter", function(){
     //console.log("mouse enter");
-    console.log(canYouSeeTheMenu + " menu visible");
+    //console.log(canYouSeeTheMenu + " menu visible");
     if(canYouSeeTheMenu === false){
+        console.log("burger to down arrow");
         burgerAnimationTimeLine.play("burgerToDownArrow");
     }else{
-        burgerAnimationTimeLine.play("XtoUpArrow");
+        console.log("x to up arrow");
+        burgerAnimationTimeLine.play("xToUpArrow");
     }
 })
 
 
 $("#burger").on("mouseleave", function(){
     if(canYouSeeTheMenu === false){
+        console.log("down arrow to burger");
         burgerAnimationTimeLine.reverse("burgerToDownArrowReverse");
         
     }else{
-        burgerAnimationTimeLine.reverse("XtoUpArrowReverse");
+        console.log("up arrow to X");
+        burgerAnimationTimeLine.reverse("xToUpArrowReverse");
     }
 })
 

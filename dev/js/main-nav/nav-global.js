@@ -69,8 +69,6 @@ mainNavTimeline.to("#main-nav", {
     y: 0
 });
 
-var burgerAnimateSpeed = 0.25;
-
 //reset the transformOrigin point for each line
 gsap.set(".lines", {
     transformOrigin: "center"
