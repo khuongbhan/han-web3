@@ -365,36 +365,36 @@
     }
 }
 
-#thoughts-button {
-    .button {
-        // overflow: hidden;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        background: none;
-        border: 1px $button-brown solid;
-        border-radius: 30px;
-        color: $button-brown;
-        cursor: pointer;
-        font-family: 'Roboto Mono', monospace;
-        // height: 100%;
-        padding: 20px 20px;
-        margin-top: 20px;
+// #thoughts-button {
+//     .button {
+//         // overflow: hidden;
+//         display: block;
+//         margin-right: auto;
+//         margin-left: auto;
+//         background: none;
+//         border: 1px $button-brown solid;
+//         border-radius: 30px;
+//         color: $button-brown;
+//         cursor: pointer;
+//         font-family: 'Roboto Mono', monospace;
+//         // height: 100%;
+//         padding: 20px 20px;
+//         margin-top: 20px;
 
-        @include md {
-            margin-top: 50px;
-        }
+//         @include md {
+//             margin-top: 50px;
+//         }
 
-        @include lg {
-            margin-top: 30px;
-        }
+//         @include lg {
+//             margin-top: 30px;
+//         }
 
-        &:hover {
-            background-color: $button-brown;
-            color: $white;
-        }
-    }
-}
+//         &:hover {
+//             background-color: $button-brown;
+//             color: $white;
+//         }
+//     }
+// }
 
 #ending-quote {
     padding-bottom: 40px; 

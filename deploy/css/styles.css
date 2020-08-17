@@ -2545,34 +2545,6 @@ footer > div ul li a:visited:active {
   width: 100%;
 }
 
-#thoughts-button .button {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  background: none;
-  border: 1px #C88968 solid;
-  border-radius: 30px;
-  color: #C88968;
-  cursor: pointer;
-  font-family: "Roboto Mono", monospace;
-  padding: 20px 20px;
-  margin-top: 20px;
-}
-@media (min-width: 768px) {
-  #thoughts-button .button {
-    margin-top: 50px;
-  }
-}
-@media (min-width: 992px) {
-  #thoughts-button .button {
-    margin-top: 30px;
-  }
-}
-#thoughts-button .button:hover {
-  background-color: #C88968;
-  color: #fff;
-}
-
 #ending-quote {
   padding-bottom: 40px;
 }
